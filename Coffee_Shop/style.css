@@ -23,6 +23,7 @@ border-radius:10px;
 html::-webkit-scrollbar
 {
     width:10px;
+    height:100px;
 }
 
 /*navbar start */
@@ -66,3 +67,105 @@ html::-webkit-scrollbar
     
 }
 /*navbar end*/
+
+
+
+/*home section start */
+#home{
+    width:100%;
+    height:90vh;
+    background-image:linear-gradient(rgba(0,0,0,0,3),rgba(0,0,0,3)),url(./images/bc.png);
+    background-repeat: no-repeat;
+    background-size:cover;
+    background-position:88%;
+}
+/*home section end*/
+
+#home .content
+{
+    padding-top:210px;
+    margin-left:56px;
+
+}
+#home .content h3
+{
+    font-size:50px;
+    color:white;
+
+}
+#home .content p
+{
+    margin-top:10px;
+    color:white;
+}
+#btn{
+    width:150px;
+    height:36px;
+    margin-top:20px;
+    background:white;
+    border-radius: 5px;
+    font-weight:bold;
+    border:none;
+    transition:0.5s ease;
+    cursor:painter;
+
+
+}
+
+#btn:hover{
+    background:#b2744c;
+    color:white;
+}
+
+/*home section end */
+
+
+
+
+
+
+
+/*about section start */
+#about
+{
+    width:100%;
+    height:100vh;
+}
+
+#about   .container
+{
+    padding-top:70px;
+}
+.heading
+{
+    text-align:center;
+    margin-bottom:50px;
+    color:black;
+    font-size:30px;
+    font-weight:bold;
+}
+.heading_span{
+    color:#b2744c;
+}
+
+#about .card img
+{
+    border-radius:10px;
+}
+
+#about-btn
+{
+    width:200px;
+    height:36px;
+    background:transparent;
+    border:2px solid #b2744c;
+    color:white;
+}
+
+@media screen and(max-width:982px){
+#about p 
+{
+font-size:35px;
+}
+} 
+/* about section end */
