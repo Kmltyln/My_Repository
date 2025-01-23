@@ -63,7 +63,20 @@
   font-size:33px;
   color:#884f9f;
 }
-.p2
+.content div.text
+{font-weight:lighter;
+  color:#3f3f3f;
+  font-family: Raleway, Helvetica, Arial, Lucida, sans-serif;
+}
+
+.content a
 {
-  color:red;
+  color: #414143 !important;
+  border-color: RGBA(255, 255, 255, 0);
+  border-radius: 60px;
+  font-size: 22px;
+  font-weight: 700 !important;
+  background-color: #65bc46;
+  margin-top: 20px;
+  
 }
