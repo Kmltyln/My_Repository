@@ -81,3 +81,12 @@
   
 }
 
+*
+{
+  margin:0;
+  padding:0;
+}
+.swipper-slide
+{
+  size:10px;
+}
