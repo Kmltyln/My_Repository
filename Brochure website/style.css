@@ -82,27 +82,43 @@
 }
 
 
-
-
- 
-
-
-
-
-
-
 .swiper-slide {
-  margin:0;
-padding:0;
-  display: flex;
- box-sizing:border-box;
+  margin-left:0;
+
   
-  width: 100vw; 
+ box-sizing:border-box;
+  height: 100%;
+  width: 100%; 
   background-color: gray;
 }
 
-.container
+.logos
 {
-  position:relative;
+ overflow: hidden;
+padding:60px 0;
+background:gray;
+
+
+overflow: hidden;
+  
   top:-75px;
+  padding:60px 0;
+  
+  
+}
+
+*{
+  margin:0;
+  padding:0;
+  box-sizing:border-box;
+}
+
+.logos-slide img
+{
+  height:50px;
+  margin:0 40px;
+}
+.swiper-slide:before
+{
+  position:absolute; 
 }
