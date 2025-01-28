@@ -16,10 +16,20 @@
   
  }
 
- #forteforever a{
+ #forteforever {
    color:purple;
    font-size:20px;
+   padding:30px;
+   z-index: 1000;
+   
  }
+ #forteforever a{
+  color:purple;
+  font-size:20px;
+  padding:15px;
+  
+  
+}
 
 
  #home::before{
@@ -27,7 +37,7 @@
    width: 100%;
    height: 90vh;
    position: absolute;
-   background-image:linear-gradient(rgba(0,0,0,0.3),rgba(0,0,0,0.3)), url(images/main\ bg.jpg);
+   background-image:linear-gradient(rgba(0,0,0,0.3),rgba(0,0,0,0.3)), url(logos/main\ bg.jpg);
    background-repeat: no-repeat;
    background-size: cover;
    background-position: 80%;
@@ -52,7 +62,7 @@
  }
 .content h3
 {
-  
+  padding-top:200px;
   font-weight: 700;
   font-size:70px;
 }
@@ -82,43 +92,84 @@
 }
 
 
-.swiper-slide {
-  margin-left:0;
 
-  
- box-sizing:border-box;
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+
+@keyframes slide {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(-100%);
+  }
+}
+
+.logos {
+  overflow: hidden;
+ 
+  background: white;
+  white-space: nowrap;
+  position: relative;
+}
+
+.logos:before,
+.logos:after {
+  position: absolute;
+  top: 0;
+  width: 250px;
   height: 100%;
-  width: 100%; 
-  background-color: gray;
+  content: "";
+  z-index: 2;
 }
 
-.logos
+.logos:before {
+  left: 0;
+  background: linear-gradient(to left, rgba(255, 255, 255, 0), white);
+}
+
+.logos:after {
+  right: 0;
+  background: linear-gradient(to right, rgba(255, 255, 255, 0), white);
+}
+
+.logos:hover .logos-slide {
+  animation-play-state: paused;
+}
+
+.logos-slide {
+  display: inline-block;
+  animation: 35s slide infinite linear;
+}
+
+.logos-slide img {
+  height: 50px;
+  margin: 0 40px;
+}
+
+
+.container-fluid img 
 {
- overflow: hidden;
-padding:60px 0;
-background:gray;
+  width:30%;
+}
 
-
-overflow: hidden;
-  
-  top:-75px;
-  padding:60px 0;
+#contact{
+  color: white !important;
+  border-color: RGBA(255, 255, 255, 0);
+  border-radius: 60px;
+  font-size: 22px;
+  font-weight: 700 !important;
+  background-color: #65bc46;
   
   
 }
-
-*{
-  margin:0;
-  padding:0;
-  box-sizing:border-box;
-}
-
-.logos-slide img
-{
-  height:50px;
-  margin:0 40px;
-}
-.swiper-slide:before
-{
-  position:absolute; 
+#forteforever{
+  
+  margin-top:70px;
+ 
 }
