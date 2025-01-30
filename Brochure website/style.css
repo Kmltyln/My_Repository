@@ -166,7 +166,9 @@
   font-weight: 700 !important;
   background-color: #65bc46;
   
-  
+#contact a:hover{
+ background-color:purple;
+}
 }
 #forteforever{
   
@@ -179,7 +181,7 @@
 {padding-top: 100px;
   text-align: center;
 color:#5d3b71;
-font-size:50px;
+font-size:60px;
 font-weight: 700;
 }
 .content-2 .first
@@ -187,7 +189,7 @@ font-weight: 700;
   padding-top:100px;
   
    color: #884f9f ;
-  font-size: 20px;
+  font-size: 25px;
   font-weight: 700;
 }
 
@@ -204,4 +206,20 @@ font-weight: 700;
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  position:relative;
+padding-left: 50px;
+}
+
+#img
+{
+  position:absolute;
+border-radius: 175px 0 100px 0 ;
+width: 335px;
+
+display:inline-block;
+left:0;
+padding-left:100px;
+margin-top:110px;
+
+
 }
