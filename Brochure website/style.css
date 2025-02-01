@@ -1,6 +1,7 @@
-.navbar
+#firstnavbar
 {
    background-color: #884f9f ;
+   
 }
 
 .dropdown:hover .dropdown-menu {
@@ -166,9 +167,7 @@
   font-weight: 700 !important;
   background-color: #65bc46;
   
-#contact a:hover{
- background-color:purple;
-}
+
 }
 #forteforever{
   
@@ -226,8 +225,37 @@ margin-top:110px;
 
 
 #top-banner h5
+{color:black;
+  
+  font-weight:700;
+  
+}
+#top-banner
 {
   text-align: center;
-  align-items: center;
- 
+  
+   justify-content: center; 
+background-color: #65bc46;
+transition: background-color 1s ease, color 1s ease;
+}
+
+#top-banner:hover
+{
+  background-color: white;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+#contact:hover
+{transition: background-color 0.3s ease, color 0.3s ease;
+  background-color:#884f9f;
+}
+#contact
+{
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.text a:hover
+{
+background-color:#7cda24;
+border-color: RGBA(255, 255, 255, 0);
 }
