@@ -259,3 +259,57 @@ transition: background-color 1s ease, color 1s ease;
 background-color:#7cda24;
 border-color: RGBA(255, 255, 255, 0);
 }
+
+#secondbutton
+{border-radius: 60px;
+  background-color:#884f9f;
+border-color: RGBA(255, 255, 255, 0);
+width:40%;
+
+}
+#secondbutton:hover
+{transition: background-color 0.3s ease, color 0.3s ease; 
+  background-color:#7cda24;
+border-color: RGBA(255, 255, 255, 0);
+border-radius: 60px;
+}
+
+#home-2 i
+{
+  transform: scale(0.5);
+  vertical-align: middle;
+
+
+}
+
+#gray-section
+{
+  margin-top:70px;
+  color:#884f9f;
+  background-color: #d9dbdc;
+  width:auto;
+  height:500px;
+  text-align: center;
+}
+#gray-section h5
+{
+  font-size:50px;
+  padding-top:50px;
+}
+
+.left ul{
+  list-style-type: none;
+  
+  
+}
+.left-1{
+  display:flex;
+  align-items: center;
+}
+.description
+{
+  color:black;
+  display: flex;
+  align-items:right;
+
+}
