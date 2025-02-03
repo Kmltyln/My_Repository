@@ -288,8 +288,10 @@ border-radius: 60px;
   color:#884f9f;
   background-color: #d9dbdc;
   width:auto;
-  height:500px;
+  height:700px;
   text-align: center;
+  
+  
 }
 #gray-section h5
 {
@@ -297,19 +299,39 @@ border-radius: 60px;
   padding-top:50px;
 }
 
-.left ul{
+.left li{
   list-style-type: none;
-  
-  
-}
-.left-1{
-  display:flex;
-  align-items: center;
-}
-.description
-{
-  color:black;
+  padding-left:100px;
+  text-align: left;
   display: flex;
-  align-items:right;
+  align-items: center;
+  font-size: 20px;
+  padding-bottom:30px;
+  padding-top:20px;
+  
 
+}
+.left .weight
+{
+  margin-right:20px;
+  
+}
+
+.left-1 span
+{
+  font-weight: 700;
+  color:black;
+  margin-bottom:200px;
+  
+
+}
+.left-1 h1
+{
+  font-size:30px;
+  font-weight: 700;
+}
+.left-1 .tags
+{
+  color:#884f9f;
+  font-size:35px;
 }
