@@ -287,8 +287,8 @@ border-radius: 60px;
   margin-top:70px;
   color:#884f9f;
   background-color: #d9dbdc;
-  width:auto;
-  height:900px;
+ 
+  height:800px;
   text-align: center;
   
   
@@ -320,12 +320,12 @@ border-radius: 60px;
 .left-1 .tags
 {
   color:#884f9f;
-  font-size:35px;
+  font-size:30px;
 }
 .right-1 .tags
 {
   color:#884f9f;
-  font-size:35px;
+  font-size:30px;
 }
 
 .container-gray 
@@ -333,8 +333,9 @@ border-radius: 60px;
   display: flex; /* Sol ve sağdaki öğeleri yan yana yerleştirir */
   justify-content: space-between;
   list-style-type: none;
-  margin-left: 100px;
-  margin-right:100px;
+  margin-left: 200px;
+  margin-right:200px;
+  margin-top:20px;
   
   
   
@@ -346,6 +347,9 @@ border-radius: 60px;
   padding-bottom:20px;
   padding-left:20px;
   text-align: left;
+  padding:15px;
+  align-items: center;
+
 }
 .container-gray a
 {
@@ -356,17 +360,12 @@ border-radius: 60px;
 .app
 {
   background-color: #884f9f;
- 
-  width: 100%;
-  height: 150px;
+ height:200px;
+
   color:white;
- 
-}
-.app span
-{
-  text-align:left;
-  position: absolute;
-  
-  left: 50%;
-  bottom:50%;
+  display: flex;
+  justify-content: center; /* Yatayda ortalar */
+  align-items: center; 
+  text-align:right;
+  padding-right:350px;
 }
