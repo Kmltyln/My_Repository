@@ -1,3 +1,9 @@
+*{
+  margin:0;
+  padding:0;
+  box-sizing: border-box;
+}
+
 #firstnavbar
 {
    background-color: #884f9f ;
@@ -368,4 +374,34 @@ border-radius: 60px;
   align-items: center; 
   text-align:right;
   padding-right:350px;
+}
+
+.app img
+{
+  border-radius: 175px 0 100px 0 ;
+  width:25%;
+  padding-left:30px;
+}
+.contact-us h1
+{
+  color:#884f9f;
+font-weight: 700;
+  padding-top: 70px;
+}
+
+
+.contact-us b
+{color: black;
+  font-weight: 700;
+  
+}
+.contact-us
+{
+  text-align: center;
+  display:flex;
+  flex-direction: column;
+  padding-right:200px;
+  padding-left:200px;
+  
+  
 }
