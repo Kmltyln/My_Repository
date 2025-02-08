@@ -390,11 +390,7 @@ font-weight: 700;
 }
 
 
-.contact-us b
-{color: black;
-  font-weight: 700;
-  
-}
+
 .contact-us
 {
   text-align: center;
@@ -402,6 +398,42 @@ font-weight: 700;
   flex-direction: column;
   padding-right:200px;
   padding-left:200px;
+  font-size:large;
   
+}
+
+.contact-link
+{
+  color:#414143;
+  border-color: RGBA(255, 255, 255, 0);
+  border-radius: 40px;
+  padding:10px;
+  font-size: 22px;
+  font-weight: 700 !important;
+  background-color:#65bc46;
   
+  text-align: center;
+ justify-content: center;
+ align-items: center;
+ text-decoration: none;
+ transition: background-color 0.3s ease, color 0.3s ease; 
+  }
+
+
+  .contact-link:hover
+{
+  color:#414143;
+  border-color: RGBA(255, 255, 255, 0);
+  border-radius: 60px;
+  padding:10px;
+  font-size: 22px;
+  font-weight: 700 !important;
+  background-color:#7cda24;
+  text-decoration: none;
+  transition: background-color 0.3s ease, color 0.3s ease; 
+  
+}
+.bottom_contact
+{
+  padding-top:20px;
 }
