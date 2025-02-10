@@ -463,3 +463,26 @@ font-weight: 700;
   text-align: center;
   justify-content: center;
 }
+.staff-section #secondbutton
+{
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  margin:auto;
+  text-align: center;
+  margin-top:50px;
+  width:25%;
+  font-size: 22px;
+  font-weight: 700;
+}
+
+.patients
+{margin-top: 100px;
+  background-color: #884f9f;
+  
+  height: 700px;
+}
+.patients
+{
+  padding:200px;
+}
