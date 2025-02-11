@@ -476,13 +476,27 @@ font-weight: 700;
   font-weight: 700;
 }
 
-.patients
+.section-patients
 {margin-top: 100px;
   background-color: #884f9f;
-  
+  text-align: center; 
   height: 700px;
+  font-size:22px;
+  align-items: center;
+  
+ 
 }
-.patients
+.section-patients h1
 {
-  padding:200px;
+  font-size:50px;
+  text-align: center;
+  padding-top:100px;
+  color:white;
+  font-weight: 700;
+  
+  
+}
+.patients iframe
+{margin:20px;
+ 
 }
