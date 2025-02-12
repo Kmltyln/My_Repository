@@ -490,13 +490,28 @@ font-weight: 700;
 {
   font-size:50px;
   text-align: center;
-  padding-top:100px;
+  padding-top:150px;
   color:white;
   font-weight: 700;
   
   
 }
-.patients iframe
-{margin:20px;
- 
+
+
+.patients{
+display: flex;
+justify-content: space-between;
+padding-right:340px;
+padding-left:340px;
+color:white;
+padding-top:50px;
+
+
+}
+
+iframe
+{
+  height:90%;
+  
+  object-fit: cover;
 }
