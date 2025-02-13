@@ -515,3 +515,29 @@ iframe
   
   object-fit: cover;
 }
+.white-part #contact{
+
+
+font-size:25px;
+
+}
+.app-section
+{background-color:#e4e6e6;
+  display: flex;
+  justify-content:space-between;
+  padding-top:60px;
+}
+
+.app-text h1
+{margin-top:-9px;
+font-size: 40px;
+}
+
+#big-logo
+{
+  margin:0;
+  padding:0;
+ color:#3f3f3f;
+  left:0;
+  
+}
