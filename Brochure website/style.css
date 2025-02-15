@@ -524,17 +524,13 @@ font-size:25px;
 .white-part
 {background-color:#e4e6e6;
   display: flex;
-  justify-content:space-between;
+  
  
   
   padding-top:60px;
 }
 
-.app-text h1
-{margin-top:-9px;
-font-size: 40px;
-padding-left:60px;
-}
+
 
 .big-logo
 {
@@ -557,4 +553,41 @@ padding-left:60px;
   font-size: 20px;
   
 }
+.container-about li
+{
+  display:flex;
+  color:#884f9f;
+  list-style-type: none;
+  align-items: center;
+  justify-content: center;
+  justify-items: center;
+  
+}
 
+.app-section
+{
+  background-color:#e4e6e6;
+}
+
+.white-part
+{background-color:#e4e6e6;
+  display: grid;
+  grid-template-columns: 1fr auto; /* İlk sütun esnek, ikinci sütun içerik genişliğine göre */
+  align-items: center;
+ 
+  
+}
+
+.text-header
+{
+  display: flex;
+  justify-content: space-between;
+  
+}
+.left-text {
+  justify-self: start; /* Sol öğeyi sola hizalar */
+}
+
+.right-text {
+  justify-self: end; /* Sol öğeyi sola hizalar */
+}
