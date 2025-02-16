@@ -523,21 +523,12 @@ font-size:25px;
 }
 .white-part
 {background-color:#e4e6e6;
-  display: flex;
-  
- 
-  
   padding-top:60px;
 }
 
 
 
-.big-logo
-{
-  padding-top:50px;
-background-color:#e4e6e6;
-padding-left:60px;
-}
+
 .forte-text
 {
   padding-top:20px;
@@ -567,27 +558,41 @@ padding-left:60px;
 .app-section
 {
   background-color:#e4e6e6;
+  
 }
 
 .white-part
-{background-color:#e4e6e6;
-  display: grid;
-  grid-template-columns: 1fr auto; /* İlk sütun esnek, ikinci sütun içerik genişliğine göre */
-  align-items: center;
+{
  
+ 
+ display: flex;
+  justify-content: space-between;
+   
   
 }
+
 
 .text-header
 {
   display: flex;
   justify-content: space-between;
-  
-}
-.left-text {
-  justify-self: start; /* Sol öğeyi sola hizalar */
+  padding-bottom:20px;
 }
 
-.right-text {
-  justify-self: end; /* Sol öğeyi sola hizalar */
+.ul-container
+{
+  color:#884f9f;
+  font-size: 22px;
+  font-weight: 700;
+  list-style-type: none;
+}
+
+
+.text-item-1 
+{
+ 
+}
+.text-item-2
+{
+  
 }

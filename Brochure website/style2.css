@@ -1,0 +1,7 @@
+.item
+{display:inline-block}
+
+.container{
+    display: flex;
+    justify-content: space-between;
+}
