@@ -638,5 +638,19 @@ width: 150px;
 {
   display: flex;
   justify-content: space-between;
+  background-color: #e4e6e6;
+  min-width: 100vh;
   
+}
+footer
+{
+  
+  background-color: #e4e6e6;
+  
+}
+.blue-line {
+  width: 100%;               /* Çizgiyi yatayda tamamen genişlet */
+  height: 2px;               /* Çizginin kalınlığını ayarla */
+  background-color: #e4e6e6;    /* Çizginin rengini mavi yap */
+             /* Çizgi etrafında boşluk bırak */
 }
