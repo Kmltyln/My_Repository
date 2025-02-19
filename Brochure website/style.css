@@ -648,9 +648,37 @@ footer
   background-color: #e4e6e6;
   
 }
-.blue-line {
-  width: 100%;               /* Çizgiyi yatayda tamamen genişlet */
-  height: 2px;               /* Çizginin kalınlığını ayarla */
-  background-color: #e4e6e6;    /* Çizginin rengini mavi yap */
-             /* Çizgi etrafında boşluk bırak */
+
+#top-banner-3{
+background-color:#884f9f;
+display:flex;
+justify-content: space-between;
+
+
+}
+
+#contact-3
+{
+  color: #005295;
+  border-color: RGBA(255, 255, 255, 0);
+  border-radius: 60px;
+  font-size: 22px;
+  font-weight: 700 !important;
+  background-color: white;
+  margin-left:100px;
+}
+#contact-3:hover
+{
+  color:white;
+  border-radius: 60px;
+  border-color: white;
+  background-color:#884f9f;
+}
+#top-banner-3 h2{
+color:white;
+margin-left:300px;
+}
+
+#contact-3{
+ 
 }
