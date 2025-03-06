@@ -1,14 +1,14 @@
-import './App.css'
+import { useState } from "react";
+import "./App.css";
 import {LoadingScreen} from "./components/LoadingScreen";
-import "./index.css"
+import "./index.css";
 function App() {
-  const[isLoaded,setIsLoaded]=useState(false)
-
+  const[isLoaded,setIsLoaded]=useState(false);
+  const [menuOpen, setMenuOpen] = useState(false);
   return  (
     <>
-    {!isLoaded && <LoadingScreen onComplete={()=>setIsLoaded(true)}/>}  
-    </>
+    {!isLoaded && <LoadingScreen onComplete={()=>setIsLoaded(true)}/>}</>
   );
 }
 
-export default App
+export default App;
