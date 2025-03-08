@@ -1,0 +1,12 @@
+D:\My_Repository\Proje\ShopApp\ShopApp.Shared\bin\Debug\net9.0\ShopApp.Shared.deps.json
+D:\My_Repository\Proje\ShopApp\ShopApp.Shared\bin\Debug\net9.0\ShopApp.Shared.dll
+D:\My_Repository\Proje\ShopApp\ShopApp.Shared\bin\Debug\net9.0\ShopApp.Shared.pdb
+D:\My_Repository\Proje\ShopApp\ShopApp.Shared\obj\Debug\net9.0\ShopApp.Shared.GeneratedMSBuildEditorConfig.editorconfig
+D:\My_Repository\Proje\ShopApp\ShopApp.Shared\obj\Debug\net9.0\ShopApp.Shared.AssemblyInfoInputs.cache
+D:\My_Repository\Proje\ShopApp\ShopApp.Shared\obj\Debug\net9.0\ShopApp.Shared.AssemblyInfo.cs
+D:\My_Repository\Proje\ShopApp\ShopApp.Shared\obj\Debug\net9.0\ShopApp.Shared.csproj.CoreCompileInputs.cache
+D:\My_Repository\Proje\ShopApp\ShopApp.Shared\obj\Debug\net9.0\ShopApp.Shared.sourcelink.json
+D:\My_Repository\Proje\ShopApp\ShopApp.Shared\obj\Debug\net9.0\ShopApp.Shared.dll
+D:\My_Repository\Proje\ShopApp\ShopApp.Shared\obj\Debug\net9.0\refint\ShopApp.Shared.dll
+D:\My_Repository\Proje\ShopApp\ShopApp.Shared\obj\Debug\net9.0\ShopApp.Shared.pdb
+D:\My_Repository\Proje\ShopApp\ShopApp.Shared\obj\Debug\net9.0\ref\ShopApp.Shared.dll

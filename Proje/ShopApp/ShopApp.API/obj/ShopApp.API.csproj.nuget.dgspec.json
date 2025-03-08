@@ -1,0 +1,367 @@
+{
+  "format": 1,
+  "restore": {
+    "D:\\My_Repository\\Proje\\ShopApp\\ShopApp.API\\ShopApp.API.csproj": {}
+  },
+  "projects": {
+    "D:\\My_Repository\\Proje\\ShopApp\\ShopApp.API\\ShopApp.API.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "D:\\My_Repository\\Proje\\ShopApp\\ShopApp.API\\ShopApp.API.csproj",
+        "projectName": "ShopApp.API",
+        "projectPath": "D:\\My_Repository\\Proje\\ShopApp\\ShopApp.API\\ShopApp.API.csproj",
+        "packagesPath": "C:\\Users\\Possessed One.000\\.nuget\\packages\\",
+        "outputPath": "D:\\My_Repository\\Proje\\ShopApp\\ShopApp.API\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "D:\\Microsoft Visual Studio\\NuGetPackages"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\Possessed One.000\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net9.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net9.0": {
+            "targetAlias": "net9.0",
+            "projectReferences": {
+              "D:\\My_Repository\\Proje\\ShopApp\\ShopApp.Business\\ShopApp.Business.csproj": {
+                "projectPath": "D:\\My_Repository\\Proje\\ShopApp\\ShopApp.Business\\ShopApp.Business.csproj"
+              },
+              "D:\\My_Repository\\Proje\\ShopApp\\ShopApp.Shared\\ShopApp.Shared.csproj": {
+                "projectPath": "D:\\My_Repository\\Proje\\ShopApp\\ShopApp.Shared\\ShopApp.Shared.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "direct"
+        },
+        "SdkAnalysisLevel": "9.0.100"
+      },
+      "frameworks": {
+        "net9.0": {
+          "targetAlias": "net9.0",
+          "dependencies": {
+            "Microsoft.AspNetCore.OpenApi": {
+              "target": "Package",
+              "version": "[9.0.2, )"
+            },
+            "Swashbuckle.AspNetCore": {
+              "target": "Package",
+              "version": "[6.4.0, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.AspNetCore.App": {
+              "privateAssets": "none"
+            },
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.103/PortableRuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "D:\\My_Repository\\Proje\\ShopApp\\ShopApp.Business\\ShopApp.Business.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "D:\\My_Repository\\Proje\\ShopApp\\ShopApp.Business\\ShopApp.Business.csproj",
+        "projectName": "ShopApp.Business",
+        "projectPath": "D:\\My_Repository\\Proje\\ShopApp\\ShopApp.Business\\ShopApp.Business.csproj",
+        "packagesPath": "C:\\Users\\Possessed One.000\\.nuget\\packages\\",
+        "outputPath": "D:\\My_Repository\\Proje\\ShopApp\\ShopApp.Business\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "D:\\Microsoft Visual Studio\\NuGetPackages"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\Possessed One.000\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net9.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net9.0": {
+            "targetAlias": "net9.0",
+            "projectReferences": {
+              "D:\\My_Repository\\Proje\\ShopApp\\ShopApp.Data\\ShopApp.Data.csproj": {
+                "projectPath": "D:\\My_Repository\\Proje\\ShopApp\\ShopApp.Data\\ShopApp.Data.csproj"
+              },
+              "D:\\My_Repository\\Proje\\ShopApp\\ShopApp.Shared\\ShopApp.Shared.csproj": {
+                "projectPath": "D:\\My_Repository\\Proje\\ShopApp\\ShopApp.Shared\\ShopApp.Shared.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "direct"
+        },
+        "SdkAnalysisLevel": "9.0.100"
+      },
+      "frameworks": {
+        "net9.0": {
+          "targetAlias": "net9.0",
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.103/PortableRuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "D:\\My_Repository\\Proje\\ShopApp\\ShopApp.Data\\ShopApp.Data.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "D:\\My_Repository\\Proje\\ShopApp\\ShopApp.Data\\ShopApp.Data.csproj",
+        "projectName": "ShopApp.Data",
+        "projectPath": "D:\\My_Repository\\Proje\\ShopApp\\ShopApp.Data\\ShopApp.Data.csproj",
+        "packagesPath": "C:\\Users\\Possessed One.000\\.nuget\\packages\\",
+        "outputPath": "D:\\My_Repository\\Proje\\ShopApp\\ShopApp.Data\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "D:\\Microsoft Visual Studio\\NuGetPackages"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\Possessed One.000\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net9.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net9.0": {
+            "targetAlias": "net9.0",
+            "projectReferences": {
+              "D:\\My_Repository\\Proje\\ShopApp\\ShopApp.Entity\\ShopApp.Entity.csproj": {
+                "projectPath": "D:\\My_Repository\\Proje\\ShopApp\\ShopApp.Entity\\ShopApp.Entity.csproj"
+              },
+              "D:\\My_Repository\\Proje\\ShopApp\\ShopApp.Shared\\ShopApp.Shared.csproj": {
+                "projectPath": "D:\\My_Repository\\Proje\\ShopApp\\ShopApp.Shared\\ShopApp.Shared.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "direct"
+        },
+        "SdkAnalysisLevel": "9.0.100"
+      },
+      "frameworks": {
+        "net9.0": {
+          "targetAlias": "net9.0",
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.103/PortableRuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "D:\\My_Repository\\Proje\\ShopApp\\ShopApp.Entity\\ShopApp.Entity.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "D:\\My_Repository\\Proje\\ShopApp\\ShopApp.Entity\\ShopApp.Entity.csproj",
+        "projectName": "ShopApp.Entity",
+        "projectPath": "D:\\My_Repository\\Proje\\ShopApp\\ShopApp.Entity\\ShopApp.Entity.csproj",
+        "packagesPath": "C:\\Users\\Possessed One.000\\.nuget\\packages\\",
+        "outputPath": "D:\\My_Repository\\Proje\\ShopApp\\ShopApp.Entity\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "D:\\Microsoft Visual Studio\\NuGetPackages"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\Possessed One.000\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net9.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net9.0": {
+            "targetAlias": "net9.0",
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "direct"
+        },
+        "SdkAnalysisLevel": "9.0.100"
+      },
+      "frameworks": {
+        "net9.0": {
+          "targetAlias": "net9.0",
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.103/PortableRuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "D:\\My_Repository\\Proje\\ShopApp\\ShopApp.Shared\\ShopApp.Shared.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "D:\\My_Repository\\Proje\\ShopApp\\ShopApp.Shared\\ShopApp.Shared.csproj",
+        "projectName": "ShopApp.Shared",
+        "projectPath": "D:\\My_Repository\\Proje\\ShopApp\\ShopApp.Shared\\ShopApp.Shared.csproj",
+        "packagesPath": "C:\\Users\\Possessed One.000\\.nuget\\packages\\",
+        "outputPath": "D:\\My_Repository\\Proje\\ShopApp\\ShopApp.Shared\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "D:\\Microsoft Visual Studio\\NuGetPackages"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\Possessed One.000\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net9.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net9.0": {
+            "targetAlias": "net9.0",
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "direct"
+        },
+        "SdkAnalysisLevel": "9.0.100"
+      },
+      "frameworks": {
+        "net9.0": {
+          "targetAlias": "net9.0",
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.103/PortableRuntimeIdentifierGraph.json"
+        }
+      }
+    }
+  }
+}

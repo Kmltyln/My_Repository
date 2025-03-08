@@ -1,0 +1,12 @@
+D:\My_Repository\Proje\ShopApp\ShopApp.Data\bin\Debug\net9.0\ShopApp.Data.deps.json
+D:\My_Repository\Proje\ShopApp\ShopApp.Data\bin\Debug\net9.0\ShopApp.Data.dll
+D:\My_Repository\Proje\ShopApp\ShopApp.Data\bin\Debug\net9.0\ShopApp.Data.pdb
+D:\My_Repository\Proje\ShopApp\ShopApp.Data\obj\Debug\net9.0\ShopApp.Data.GeneratedMSBuildEditorConfig.editorconfig
+D:\My_Repository\Proje\ShopApp\ShopApp.Data\obj\Debug\net9.0\ShopApp.Data.AssemblyInfoInputs.cache
+D:\My_Repository\Proje\ShopApp\ShopApp.Data\obj\Debug\net9.0\ShopApp.Data.AssemblyInfo.cs
+D:\My_Repository\Proje\ShopApp\ShopApp.Data\obj\Debug\net9.0\ShopApp.Data.csproj.CoreCompileInputs.cache
+D:\My_Repository\Proje\ShopApp\ShopApp.Data\obj\Debug\net9.0\ShopApp.Data.sourcelink.json
+D:\My_Repository\Proje\ShopApp\ShopApp.Data\obj\Debug\net9.0\ShopApp.Data.dll
+D:\My_Repository\Proje\ShopApp\ShopApp.Data\obj\Debug\net9.0\refint\ShopApp.Data.dll
+D:\My_Repository\Proje\ShopApp\ShopApp.Data\obj\Debug\net9.0\ShopApp.Data.pdb
+D:\My_Repository\Proje\ShopApp\ShopApp.Data\obj\Debug\net9.0\ref\ShopApp.Data.dll

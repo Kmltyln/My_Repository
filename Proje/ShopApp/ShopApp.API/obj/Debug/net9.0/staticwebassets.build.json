@@ -1,0 +1,12 @@
+{
+  "Version": 1,
+  "Hash": "IWk//TxPCjcf3IT4PgvTByMcKhRjBph+Z3QlTC0r0S4=",
+  "Source": "ShopApp.API",
+  "BasePath": "_content/ShopApp.API",
+  "Mode": "Default",
+  "ManifestType": "Build",
+  "ReferencedProjectsConfiguration": [],
+  "DiscoveryPatterns": [],
+  "Assets": [],
+  "Endpoints": []
+}
