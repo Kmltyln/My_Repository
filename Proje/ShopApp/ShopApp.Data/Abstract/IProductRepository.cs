@@ -1,4 +1,5 @@
 using System;
+using ShopApp.Entity.Concrete;
 
 namespace ShopApp.Data.Abstract;
 
