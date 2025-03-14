@@ -1,0 +1,117 @@
+{
+  "Files": [
+    {
+      "Id": "D:\\My_Repository\\Proje\\ShopApp\\ShopApp.API\\wwwroot\\1.png",
+      "PackagePath": "staticwebassets\\1.png"
+    },
+    {
+      "Id": "D:\\My_Repository\\Proje\\ShopApp\\ShopApp.API\\wwwroot\\10.png",
+      "PackagePath": "staticwebassets\\10.png"
+    },
+    {
+      "Id": "D:\\My_Repository\\Proje\\ShopApp\\ShopApp.API\\wwwroot\\11.png",
+      "PackagePath": "staticwebassets\\11.png"
+    },
+    {
+      "Id": "D:\\My_Repository\\Proje\\ShopApp\\ShopApp.API\\wwwroot\\12.png",
+      "PackagePath": "staticwebassets\\12.png"
+    },
+    {
+      "Id": "D:\\My_Repository\\Proje\\ShopApp\\ShopApp.API\\wwwroot\\13.png",
+      "PackagePath": "staticwebassets\\13.png"
+    },
+    {
+      "Id": "D:\\My_Repository\\Proje\\ShopApp\\ShopApp.API\\wwwroot\\14.png",
+      "PackagePath": "staticwebassets\\14.png"
+    },
+    {
+      "Id": "D:\\My_Repository\\Proje\\ShopApp\\ShopApp.API\\wwwroot\\15.png",
+      "PackagePath": "staticwebassets\\15.png"
+    },
+    {
+      "Id": "D:\\My_Repository\\Proje\\ShopApp\\ShopApp.API\\wwwroot\\16.png",
+      "PackagePath": "staticwebassets\\16.png"
+    },
+    {
+      "Id": "D:\\My_Repository\\Proje\\ShopApp\\ShopApp.API\\wwwroot\\17.png",
+      "PackagePath": "staticwebassets\\17.png"
+    },
+    {
+      "Id": "D:\\My_Repository\\Proje\\ShopApp\\ShopApp.API\\wwwroot\\18.png",
+      "PackagePath": "staticwebassets\\18.png"
+    },
+    {
+      "Id": "D:\\My_Repository\\Proje\\ShopApp\\ShopApp.API\\wwwroot\\19.png",
+      "PackagePath": "staticwebassets\\19.png"
+    },
+    {
+      "Id": "D:\\My_Repository\\Proje\\ShopApp\\ShopApp.API\\wwwroot\\2.png",
+      "PackagePath": "staticwebassets\\2.png"
+    },
+    {
+      "Id": "D:\\My_Repository\\Proje\\ShopApp\\ShopApp.API\\wwwroot\\20.png",
+      "PackagePath": "staticwebassets\\20.png"
+    },
+    {
+      "Id": "D:\\My_Repository\\Proje\\ShopApp\\ShopApp.API\\wwwroot\\21.png",
+      "PackagePath": "staticwebassets\\21.png"
+    },
+    {
+      "Id": "D:\\My_Repository\\Proje\\ShopApp\\ShopApp.API\\wwwroot\\22.png",
+      "PackagePath": "staticwebassets\\22.png"
+    },
+    {
+      "Id": "D:\\My_Repository\\Proje\\ShopApp\\ShopApp.API\\wwwroot\\3.png",
+      "PackagePath": "staticwebassets\\3.png"
+    },
+    {
+      "Id": "D:\\My_Repository\\Proje\\ShopApp\\ShopApp.API\\wwwroot\\4.png",
+      "PackagePath": "staticwebassets\\4.png"
+    },
+    {
+      "Id": "D:\\My_Repository\\Proje\\ShopApp\\ShopApp.API\\wwwroot\\5.png",
+      "PackagePath": "staticwebassets\\5.png"
+    },
+    {
+      "Id": "D:\\My_Repository\\Proje\\ShopApp\\ShopApp.API\\wwwroot\\6.png",
+      "PackagePath": "staticwebassets\\6.png"
+    },
+    {
+      "Id": "D:\\My_Repository\\Proje\\ShopApp\\ShopApp.API\\wwwroot\\7.png",
+      "PackagePath": "staticwebassets\\7.png"
+    },
+    {
+      "Id": "D:\\My_Repository\\Proje\\ShopApp\\ShopApp.API\\wwwroot\\8.png",
+      "PackagePath": "staticwebassets\\8.png"
+    },
+    {
+      "Id": "D:\\My_Repository\\Proje\\ShopApp\\ShopApp.API\\wwwroot\\9.png",
+      "PackagePath": "staticwebassets\\9.png"
+    },
+    {
+      "Id": "D:\\My_Repository\\Proje\\ShopApp\\ShopApp.API\\wwwroot\\NoPicture.png",
+      "PackagePath": "staticwebassets\\NoPicture.png"
+    },
+    {
+      "Id": "obj\\Debug\\net9.0\\staticwebassets\\msbuild.ShopApp.API.Microsoft.AspNetCore.StaticWebAssetEndpoints.props",
+      "PackagePath": "build\\Microsoft.AspNetCore.StaticWebAssetEndpoints.props"
+    },
+    {
+      "Id": "obj\\Debug\\net9.0\\staticwebassets\\msbuild.ShopApp.API.Microsoft.AspNetCore.StaticWebAssets.props",
+      "PackagePath": "build\\Microsoft.AspNetCore.StaticWebAssets.props"
+    },
+    {
+      "Id": "obj\\Debug\\net9.0\\staticwebassets\\msbuild.build.ShopApp.API.props",
+      "PackagePath": "build\\ShopApp.API.props"
+    },
+    {
+      "Id": "obj\\Debug\\net9.0\\staticwebassets\\msbuild.buildMultiTargeting.ShopApp.API.props",
+      "PackagePath": "buildMultiTargeting\\ShopApp.API.props"
+    },
+    {
+      "Id": "obj\\Debug\\net9.0\\staticwebassets\\msbuild.buildTransitive.ShopApp.API.props",
+      "PackagePath": "buildTransitive\\ShopApp.API.props"
+    }
+  ],
+  "ElementsToRemove": []
+}
