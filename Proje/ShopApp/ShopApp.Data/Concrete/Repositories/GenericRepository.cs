@@ -1,18 +1,30 @@
 using System;
+using Microsoft.EntityFrameworkCore;
 using ShopApp.Data.Abstract;
 
 namespace ShopApp.Data.Concrete.Repositories;
 
 public class GenericRepository<TEntity> : IGenericRepository<TEntity> where TEntity : class
 {
-    public Task<TEntity> CreateAsync(TEntity entity)
+    protected readonly AppDbContext _dbContext;
+    private readonly DbSet<TEntity> _dbSet;
+    public GenericRepository(AppDbContext dbContext)
     {
-        throw new NotImplementedException();
+            _dbContext=dbContext;
+            _dbSet=dbContext.Set<TEntity>(); 
+    }
+    public async Task<TEntity> CreateAsync(TEntity entity)
+    {
+      await _dbSet.AddAsync(entity); 
+      _dbSet.Add(entity);
+      await _dbContext.SaveChangesAsync();
+      return entity;
     }
 
-    public Task DeleteAsync(TEntity entity)
+    public async Task DeleteAsync(TEntity entity)
     {
-        throw new NotImplementedException();
+       _dbSet.Remove(entity);
+       await _dbContext.SaveChangesAsync(); 
     }
 
     public Task<List<TEntity>> GetAllAsync()
@@ -30,8 +42,9 @@ public class GenericRepository<TEntity> : IGenericRepository<TEntity> where TEnt
         throw new NotImplementedException();
     }
 
-    public Task UpdateAsync(TEntity entity)
+    public async  Task UpdateAsync(TEntity entity)
     {
-        throw new NotImplementedException();
+        _dbSet.Update(entity);
+        await _dbContext.SaveChangesAsync();
     }
 }

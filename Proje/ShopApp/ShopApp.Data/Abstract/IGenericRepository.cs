@@ -8,7 +8,7 @@ Task<TEntity> CreateAsync(TEntity entity);
 Task UpdateAsync(TEntity entity);
 Task DeleteAsync(TEntity entity);
 
-Task <TEntity>GetByIdASync(int id);
+Task <TEntity>GetByIdASync(Expression<Func<TEntity,bool>>options);
 Task <List<TEntity>>GetAllAsync();
 Task <int>GetCountAsync();
 }
