@@ -1,5 +1,7 @@
 using Microsoft.EntityFrameworkCore;
 using ShopApp.Data;
+using ShopApp.Data.Abstract;
+using ShopApp.Data.Concrete.Repositories;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -9,8 +11,8 @@ builder.Services.AddSwaggerGen();
 
 builder.Services.AddDbContext<AppDbContext>(options=>options.UseSqlServer(builder.Configuration.GetConnectionString("SqlServerConnection")));
 
-
-
+builder.Services.AddScoped<ICategoryRepository,CategoryRepository>();
+StatusCodes.Status400BadRequest;
 
 var app = builder.Build();
 

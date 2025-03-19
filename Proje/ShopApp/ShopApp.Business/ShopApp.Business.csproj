@@ -11,9 +11,4 @@
 <ProjectReference Include="../ShopApp.Data/ShopApp.Data.csproj" />
 <ProjectReference Include="../ShopApp.Shared/ShopApp.Shared.csproj" />
 </ItemGroup>
-
-
-<ItemGroup>
-  <Folder Include="Concrete\" />
-</ItemGroup>
 </Project>
