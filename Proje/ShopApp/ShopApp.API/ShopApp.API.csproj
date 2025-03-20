@@ -21,7 +21,6 @@
 <ProjectReference Include="../ShopApp.Shared/ShopApp.Shared.csproj" />
 </ItemGroup>
 <ItemGroup>
-  <Folder Include="Controllers\" />
   <Folder Include="wwwroot\" />
 </ItemGroup>
 </Project>

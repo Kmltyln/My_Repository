@@ -1005,7 +1005,10 @@
         },
         "runtime": {
           "bin/placeholder/ShopApp.Shared.dll": {}
-        }
+        },
+        "frameworkReferences": [
+          "Microsoft.AspNetCore.App"
+        ]
       }
     }
   },

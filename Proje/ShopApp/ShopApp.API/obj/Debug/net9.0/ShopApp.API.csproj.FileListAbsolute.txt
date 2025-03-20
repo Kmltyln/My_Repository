@@ -148,3 +148,5 @@ D:\My_Repository\Proje\ShopApp\ShopApp.API\bin\Debug\net9.0\tr\Microsoft.CodeAna
 D:\My_Repository\Proje\ShopApp\ShopApp.API\bin\Debug\net9.0\zh-Hans\Microsoft.CodeAnalysis.Workspaces.resources.dll
 D:\My_Repository\Proje\ShopApp\ShopApp.API\bin\Debug\net9.0\zh-Hant\Microsoft.CodeAnalysis.Workspaces.resources.dll
 D:\My_Repository\Proje\ShopApp\ShopApp.API\bin\Debug\net9.0\ShopApp.API.staticwebassets.runtime.json
+D:\My_Repository\Proje\ShopApp\ShopApp.API\bin\Debug\net9.0\AutoMapper.dll
+D:\My_Repository\Proje\ShopApp\ShopApp.API\bin\Debug\net9.0\AutoMapper.Extensions.Microsoft.DependencyInjection.dll
