@@ -25,7 +25,7 @@ namespace ShopApp.Business.Concrete
         {
             string url = CustomUrlHelper.GetUrl(categoryCreateDto.Name);
             Category category =_mapper.Map<Category>(categoryCreateDto);
-            
+            category.Url=url;
             var createdCategory=await _categoryRepository.CreateAsync(category);
             if(createdCategory==null)
             {
