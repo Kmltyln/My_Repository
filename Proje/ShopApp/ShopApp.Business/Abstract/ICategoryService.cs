@@ -3,7 +3,8 @@ using ShopApp.Shared.Dtos.CategoryDtos;
 using ShopApp.Shared.Dtos.ResponseDtos;
 
 
-namespace ShopApp.Business.Abstract;
+namespace ShopApp.Business.Abstract
+{
 
 public interface ICategoryService
 {
@@ -16,4 +17,5 @@ Task<ResponseDto<List<CategoryDto>>>GetActiveAsync(bool isActive=true);
 Task<ResponseDto<int>>GetCountAsync();
 Task<ResponseDto<int>>GetActivesCountAsync(bool isActive=true);
 
+}
 }

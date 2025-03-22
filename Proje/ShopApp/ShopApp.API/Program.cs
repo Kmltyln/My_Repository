@@ -1,4 +1,6 @@
 using Microsoft.EntityFrameworkCore;
+using ShopApp.Business.Abstract;
+using ShopApp.Business.Concrete;
 using ShopApp.Data;
 using ShopApp.Data.Abstract;
 using ShopApp.Data.Concrete.Repositories;
@@ -12,6 +14,7 @@ builder.Services.AddSwaggerGen();
 builder.Services.AddDbContext<AppDbContext>(options=>options.UseSqlServer(builder.Configuration.GetConnectionString("SqlServerConnection")));
 
 builder.Services.AddScoped<ICategoryRepository,CategoryRepository>();
+builder.Services.AddScoped<ICategoryService, CategoryService>();
 builder.Services.AddAutoMapper(AppDomain.CurrentDomain.GetAssemblies());
 var app = builder.Build();
 

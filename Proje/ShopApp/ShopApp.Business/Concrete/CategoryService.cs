@@ -38,12 +38,25 @@ namespace ShopApp.Business.Concrete
 
         public Task<ResponseDto<NoContent>> DeleteAsync(int id)
         {
-            throw new NotImplementedException();
-        }
+           var category=await _categoryRepository.GetByIdASync(x=>x.Id==id);
+           if(category==null)
+           {
+            return ResponseDto<NoContent>.Fail($"{id}id'li kategori bulunamadı",StatusCodes.Status404NotFound); 
+           }
+           await _categoryRepository.DeleteAsync(category);
+           return ResponseDto<NoContent>.Success(StatusCodes.Status200OK);  
+        } 
 
         public Task<ResponseDto<List<CategoryDto>>> GetActiveAsync(bool isActive = true)
         {
-            throw new NotImplementedException();
+          var categoryList=await _categoryRepository.GetAllAsync(x=>x.IsActive==isActive);
+          string statusText=isActive? "aktif":"pasif";
+          if(categoryList.Count==0)
+          {
+            return ResponseDto<List<CategoryDto>>.Fail($"Hiç {statusText}kategori bulunamadı!",StatusCodes.Status404NotFound);
+          }
+          var categoryDtoList=_mapper.Map<List<CategoryDto>>(categoryList);
+          return ResponseDto<List<CategoryDto>>.Success(categoryDtoList,statusText);
         }
 
         public Task<ResponseDto<int>> GetActivesCountAsync(bool isActive = true)
