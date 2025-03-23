@@ -10,7 +10,7 @@ using ShopApp.Shared.Helpers;
 
 namespace ShopApp.Business.Concrete
 {
-    public class CategoryService : ICategoryService
+    public class CategoryService :ICategoryService
     {//Dependency Injection
         private readonly ICategoryRepository _categoryRepository;
         private readonly IMapper _mapper;
@@ -36,7 +36,7 @@ namespace ShopApp.Business.Concrete
            return ResponseDto<CategoryDto>.Success(categoryDto,StatusCodes.Status201Created);
          }
 
-        public Task<ResponseDto<NoContent>> DeleteAsync(int id)
+        public async Task<ResponseDto<NoContent>> DeleteAsync(int id)
         {
            var category=await _categoryRepository.GetByIdASync(x=>x.Id==id);
            if(category==null)
@@ -47,7 +47,7 @@ namespace ShopApp.Business.Concrete
            return ResponseDto<NoContent>.Success(StatusCodes.Status200OK);  
         } 
 
-        public Task<ResponseDto<List<CategoryDto>>> GetActiveAsync(bool isActive = true)
+        public async Task<ResponseDto<List<CategoryDto>>> GetActivesAsync(bool isActive = true)
         {
           var categoryList=await _categoryRepository.GetAllAsync(x=>x.IsActive==isActive);
           string statusText=isActive? "aktif":"pasif";
@@ -56,27 +56,52 @@ namespace ShopApp.Business.Concrete
             return ResponseDto<List<CategoryDto>>.Fail($"Hiç {statusText}kategori bulunamadı!",StatusCodes.Status404NotFound);
           }
           var categoryDtoList=_mapper.Map<List<CategoryDto>>(categoryList);
-          return ResponseDto<List<CategoryDto>>.Success(categoryDtoList,statusText);
+          return ResponseDto<List<CategoryDto>>.Success(categoryDtoList,StatusCodes.Status200OK);
         }
 
-        public Task<ResponseDto<int>> GetActivesCountAsync(bool isActive = true)
+        public async Task<ResponseDto<int>> GetActivesCountAsync(bool isActive = true)
         {
-            throw new NotImplementedException();
+            int count=await _categoryRepository. (x=>x.IsActive==isActive);
+            string statusText=isActive ? "aktif":"pasif";
+            if(count==0)
+            {
+                return ResponseDto<int>.Fail("Hiç {statusText}kategori yok!",StatusCodes.Status404NotFound);
+            }
+            return ResponseDto<int>.Success(count,StatusCodes.Status200OK);
         }
 
-        public Task<ResponseDto<List<CategoryDto>>> GetAllAsync()
+        public async Task<ResponseDto<List<CategoryDto>>> GetAllAsync()
         {
-            throw new NotImplementedException();
+           var categoryList=await _categoryRepository.GetAllAsync();
+          
+          if(categoryList.Count==0)
+          {
+            return ResponseDto<List<CategoryDto>>.Fail($"Hiç {statusText}kategori bulunamadı!",StatusCodes.Status404NotFound);
+          }
+          var categoryDtoList=_mapper.Map<List<CategoryDto>>(categoryList);
+          return ResponseDto<List<CategoryDto>>.Success(categoryDtoList,StatusCodes.Status200OK);
         }
 
-        public Task<ResponseDto<CategoryDto>> GetByIdAsync(int id)
+        public async Task<ResponseDto<CategoryDto>> GetByIdAsync(int id)
         {
-            throw new NotImplementedException();
+           var category=await _categoryRepository.GetByIdAsync(x=>x.Id==id);
+          
+          if(category==null)
+          {
+            return ResponseDto<List<CategoryDto>>.Fail($"Hiç {id} id'li kategori bulunamadı!",StatusCodes.Status404NotFound);
+          }
+          var categoryDto=_mapper.Map<List<CategoryDto>>(category);
+          return ResponseDto<CategoryDto>.Success(categoryDto,StatusCodes.Status200OK);
         }
 
-        public Task<ResponseDto<int>> GetCountAsync()
+        public async Task<ResponseDto<int>> GetCountAsync()
         {
-            throw new NotImplementedException();
+           int count = await _categoryRepository.GetCountAsync();
+            if (count == 0)
+            {
+                return ResponseDto<int>.Fail("Hiç kategori yok!", StatusCodes.Status404NotFound);
+            }
+            return ResponseDto<int>.Success(count, StatusCodes.Status200OK);
         }
 
         public Task<ResponseDto<CategoryDto>> UpdateAsync(CategoryUpdateDto categoryUpdateDto)

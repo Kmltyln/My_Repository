@@ -23,5 +23,7 @@ public class CategoriesController:CustomControllerBase
     var response=await _categoryService.CreateAsync(categoryCreateDto);
      return CreateActionResult(response);
     }
+    [HttpDelete]
+    public async Task<IActionResult>Delete(int id)
 }
 }

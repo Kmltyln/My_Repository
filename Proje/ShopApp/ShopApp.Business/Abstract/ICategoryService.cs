@@ -13,7 +13,7 @@ Task<ResponseDto<CategoryDto>> UpdateAsync(CategoryUpdateDto categoryUpdateDto);
 Task<ResponseDto<NoContent>> DeleteAsync(int id);
 Task<ResponseDto<CategoryDto>> GetByIdAsync(int id);
 Task<ResponseDto<List<CategoryDto>>>GetAllAsync();
-Task<ResponseDto<List<CategoryDto>>>GetActiveAsync(bool isActive=true);
+Task<ResponseDto<List<CategoryDto>>>GetActivesAsync(bool isActive=true);
 Task<ResponseDto<int>>GetCountAsync();
 Task<ResponseDto<int>>GetActivesCountAsync(bool isActive=true);
 
