@@ -9,8 +9,8 @@ namespace ShopApp.API.Controllers
     [ApiController]
     [Route("api/[controller]/[action]")]
 
-public class CategoriesController:CustomControllerBase
-{
+    public class CategoriesController:CustomControllerBase
+    {
     private readonly ICategoryService _categoryService;
 
     public CategoriesController(ICategoryService categoryService)
@@ -23,7 +23,36 @@ public class CategoriesController:CustomControllerBase
     var response=await _categoryService.CreateAsync(categoryCreateDto);
      return CreateActionResult(response);
     }
-    [HttpDelete]
+    [HttpDelete("{id}")]
     public async Task<IActionResult>Delete(int id)
+    { 
+    var response=await _categoryService.DeleteAsync(id);
+    return CreateActionResult(response);
+    }
+[HttpGet]
+public async Task<IActionResult> GetActives(bool isActive=true)
+{
+    var response=await _categoryService.GetActivesAsync(isActive);
+    return CreateActionResult(response);
 }
+[HttpGet]
+        public async Task<IActionResult> GetAll()
+        {
+            var response = await _categoryService.GetAllAsync();
+            return CreateActionResult(response);
+        }
+
+[HttpGet("{isActive}")]
+public async Task<IActionResult> GetActivesCount(bool isActive=true)
+{
+    var response=await _categoryService.GetActivesCountAsync(isActive);
+    return CreateActionResult(response);
+}
+[HttpGet]
+public async Task<IActionResult> GetCount()
+{
+    var response=await _categoryService.GetCountAsync( );
+    return CreateActionResult(response);
+}
+    }
 }

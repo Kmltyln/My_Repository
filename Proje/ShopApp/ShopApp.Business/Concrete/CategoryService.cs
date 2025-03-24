@@ -61,7 +61,7 @@ namespace ShopApp.Business.Concrete
 
         public async Task<ResponseDto<int>> GetActivesCountAsync(bool isActive = true)
         {
-            int count=await _categoryRepository. (x=>x.IsActive==isActive);
+            int count=await _categoryRepository.GetCountAsync(x=>x.IsActive==isActive);
             string statusText=isActive ? "aktif":"pasif";
             if(count==0)
             {
@@ -72,11 +72,11 @@ namespace ShopApp.Business.Concrete
 
         public async Task<ResponseDto<List<CategoryDto>>> GetAllAsync()
         {
-           var categoryList=await _categoryRepository.GetAllAsync();
+           var categoryList= await _categoryRepository.GetAllAsync();
           
           if(categoryList.Count==0)
           {
-            return ResponseDto<List<CategoryDto>>.Fail($"Hiç {statusText}kategori bulunamadı!",StatusCodes.Status404NotFound);
+            return ResponseDto<List<CategoryDto>>.Fail($"Hiç kategori bulunamadı!",StatusCodes.Status404NotFound);
           }
           var categoryDtoList=_mapper.Map<List<CategoryDto>>(categoryList);
           return ResponseDto<List<CategoryDto>>.Success(categoryDtoList,StatusCodes.Status200OK);
@@ -84,13 +84,13 @@ namespace ShopApp.Business.Concrete
 
         public async Task<ResponseDto<CategoryDto>> GetByIdAsync(int id)
         {
-           var category=await _categoryRepository.GetByIdAsync(x=>x.Id==id);
+           var category=await _categoryRepository.GetByIdASync(x=>x.Id==id);
           
           if(category==null)
           {
-            return ResponseDto<List<CategoryDto>>.Fail($"Hiç {id} id'li kategori bulunamadı!",StatusCodes.Status404NotFound);
+            return ResponseDto<CategoryDto>.Fail($"Hiç {id} id'li kategori bulunamadı!",StatusCodes.Status404NotFound);
           }
-          var categoryDto=_mapper.Map<List<CategoryDto>>(category);
+          var categoryDto=_mapper.Map<CategoryDto>(category);
           return ResponseDto<CategoryDto>.Success(categoryDto,StatusCodes.Status200OK);
         }
 
@@ -104,9 +104,19 @@ namespace ShopApp.Business.Concrete
             return ResponseDto<int>.Success(count, StatusCodes.Status200OK);
         }
 
-        public Task<ResponseDto<CategoryDto>> UpdateAsync(CategoryUpdateDto categoryUpdateDto)
+        public async Task<ResponseDto<CategoryDto>> UpdateAsync(CategoryUpdateDto categoryUpdateDto)
         {
-            throw new NotImplementedException();
+            var category=await _categoryRepository.GetByIdASync(x=>x.Id==categoryUpdateDto.Id); 
+            if(category==null)
+            {
+              return ResponseDto<CategoryDto>.Fail("Böyle bir kategori bulunamadı",StatusCodes.Status404NotFound);
+            }
+            category=_mapper.Map<Category>(categoryUpdateDto);
+            category.ModifiedDate=DateTime.Now;
+            await _categoryRepository.UpdateAsync(category);
+            var categoryDto=_mapper.Map<CategoryDto>(category);
+            
+            return ResponseDto<CategoryDto>.Success(categoryDto,StatusCodes.Status200OK );
         }
     }
 }

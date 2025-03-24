@@ -1,13 +1,14 @@
 using System;
 
-namespace ShopApp.Shared.Dtos.CategoryDtos;
-
-public class CategoryDto
+namespace ShopApp.Shared.Dtos.CategoryDtos
 {
- public int Id{get;set;}
+    public class CategoryDto
+    {
+     public int Id{get;set;}
     
-    public string Name{get;set;}
-    public bool IsActive{get;set;}=true;
-    public string Url{get;set;} 
-    public string Description{get;set;}
+        public string Name{get;set;}
+        public bool IsActive{get;set;}=true;
+        public string Url{get;set;} 
+        public string Description{get;set;}
+    }
 }

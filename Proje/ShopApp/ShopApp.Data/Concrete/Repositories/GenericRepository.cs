@@ -41,15 +41,35 @@ public class GenericRepository<TEntity> : IGenericRepository<TEntity> where TEnt
             return await query.ToListAsync();//_dbContext.Products.Include(x=>x.Category).Where(x=>x.IsHome==true).ToListAsync()
         }
 
-    public Task<TEntity> GetByIdASync(Expression<Func<TEntity, bool>>? options=null, Func<IQueryable<TEntity>, IIncludableQueryable<TEntity, object>>? predicate=null )
+    public async Task<TEntity> GetByIdASync(Expression<Func<TEntity, bool>>? options=null, Func<IQueryable<TEntity>, IIncludableQueryable<TEntity, object>>? predicate=null )
     {
-        throw new NotImplementedException();
+         IQueryable<TEntity> query = _dbSet;
+            if (predicate != null)
+            {
+                query = predicate(query);
+            }
+            if (options != null)
+            {
+                query = query.Where(options);
+            }
+#pragma warning disable CS8603 // Possible null reference return.
+            return await query.SingleOrDefaultAsync();
+#pragma warning restore CS8603 // Possible null reference return.
     }
 
-    public Task<int> GetCountAsync(Expression<Func<TEntity, bool>>? options, Func<IQueryable<TEntity>, IIncludableQueryable<TEntity, object>> predicate)
+    public async Task<int> GetCountAsync(Expression<Func<TEntity, bool>>? options, Func<IQueryable<TEntity>, IIncludableQueryable<TEntity, object>> predicate)
     {
-        throw new NotImplementedException();
-    }
+            IQueryable<TEntity> query = _dbSet;
+            if (predicate != null)
+            {
+                query = predicate(query);
+            }
+            if (options != null)
+            {
+                query = query.Where(options);
+            }
+            return await query.CountAsync();
+        }
 
     public async  Task UpdateAsync(TEntity entity)
     {
