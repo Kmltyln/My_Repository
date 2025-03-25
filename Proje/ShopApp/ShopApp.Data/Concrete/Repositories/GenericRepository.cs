@@ -53,7 +53,7 @@ public class GenericRepository<TEntity> : IGenericRepository<TEntity> where TEnt
                 query = query.Where(options);
             }
 #pragma warning disable CS8603 // Possible null reference return.
-            return await query.SingleOrDefaultAsync();
+            return await query.AsNoTracking().SingleOrDefaultAsync();
 #pragma warning restore CS8603 // Possible null reference return.
     }
 

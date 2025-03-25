@@ -23,6 +23,13 @@ namespace ShopApp.API.Controllers
     var response=await _categoryService.CreateAsync(categoryCreateDto);
      return CreateActionResult(response);
     }
+     [HttpPost]
+    public async Task<IActionResult> Update(CategoryUpdateDto categoryUpdateDto)
+    {
+    var response=await _categoryService.UpdateAsync(categoryUpdateDto);
+     return CreateActionResult(response);
+    }
+
     [HttpDelete("{id}")]
     public async Task<IActionResult>Delete(int id)
     { 

@@ -113,6 +113,8 @@ namespace ShopApp.Business.Concrete
             }
             category=_mapper.Map<Category>(categoryUpdateDto);
             category.ModifiedDate=DateTime.Now;
+            
+            category.Url=CustomUrlHelper.GetUrl(categoryUpdateDto.Name);
             await _categoryRepository.UpdateAsync(category);
             var categoryDto=_mapper.Map<CategoryDto>(category);
             
