@@ -12,9 +12,6 @@
 <ProjectReference Include="../ShopApp.Shared/ShopApp.Shared.csproj" />
 </ItemGroup>
 <ItemGroup>
-    <Folder Include="Concrete\" />
-  </ItemGroup>
-<ItemGroup>
   <PackageReference Include="AutoMapper.Extensions.Microsoft.DependencyInjection" Version="12.0.1" />
 </ItemGroup>
 </Project>
