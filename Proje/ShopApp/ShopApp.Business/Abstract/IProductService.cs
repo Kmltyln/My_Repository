@@ -13,9 +13,9 @@ Task<ResponseDto<ProductDto>> GetByIdAsync(int id);
 Task<ResponseDto<List<ProductDto>>> GetAllAsync();
 Task<ResponseDto<List<ProductDto>>> GetActivesAsync(bool isActive);
 Task<ResponseDto<List<ProductDto>>> GetHomeAsync(bool isHome=true);  
-Task<ResponseDto<List<ProductDto>>> GetByCategoryAsync(int categoryId);
+Task<ResponseDto<List<ProductDto>>> GetAllByCategoryAsync(int categoryId);
 Task<ResponseDto<int>>GetCountAsync();
 Task<ResponseDto<int>>GetActivesCountAsync(bool isActive=true);
 Task<ResponseDto<int>>GetHomeCountAsync(bool isActive=true);
-Task<ResponseDto<NoContent>>UpdateIsActiveAsync(int id);
+Task<ResponseDto<NoContent>>UpdateIsActiveAsync(int id); 
 }

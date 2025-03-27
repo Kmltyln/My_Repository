@@ -1,6 +1,7 @@
 using System;
 using AutoMapper;
 using Microsoft.AspNetCore.Http;
+using Microsoft.EntityFrameworkCore;
 using ShopApp.Business.Abstract;
 using ShopApp.Data.Abstract;
 using ShopApp.Entity.Concrete;
@@ -14,12 +15,14 @@ public class ProductService : IProductService
 {
 
     private readonly IProductRepository _productRepository;
+    private readonly ICategoryRepository _categoryRepository;
     private readonly IMapper _mapper;
 
-    public ProductService(IProductRepository productRepository, IMapper mapper)
+    public ProductService(IProductRepository productRepository, IMapper mapper, ICategoryRepository categoryRepository)
     {
         _productRepository = productRepository;
         _mapper = mapper;
+        _categoryRepository = categoryRepository;
     }
 
     public async Task<ResponseDto<ProductDto>> CreateAsync(ProductCreateDto productCreateDto)
@@ -46,29 +49,64 @@ public class ProductService : IProductService
        return ResponseDto<NoContent>.Success(StatusCodes.Status200OK);
     }
 
-    public Task<ResponseDto<List<ProductDto>>> GetActivesAsync(bool isActive)
+    public async Task<ResponseDto<List<ProductDto>>> GetActivesAsync(bool isActive)
     {
-        throw new NotImplementedException();
+         List<Product> productList=await _productRepository.GetAllAsync(null, x => x.Include(y => y.Category));;
+        string statusText=isActive ? "aktif" : "pasif";
+        if(productList.Count==0 )
+        {
+            return ResponseDto<List<ProductDto>>.Fail($"Hiç {statusText}ürün bulunamadı",StatusCodes.Status404NotFound); 
+        }
+        List<ProductDto> productDtosList= _mapper.Map<List<ProductDto>>(productList);
+        return ResponseDto<List<ProductDto>>.Success(productDtosList ,StatusCodes.Status200OK);
     }
 
-    public Task<ResponseDto<int>> GetActivesCountAsync(bool isActive = true)
+    public async Task<ResponseDto<int>> GetActivesCountAsync(bool isActive = true)
     {
-        throw new NotImplementedException();
+       int count=await _productRepository.GetCountAsync(x=>x.IsActive==isActive);
+       string statusText=isActive? "aktif":"pasif"; 
+       if(count==0)
+       {
+        return ResponseDto<int>.Fail($"Hiç{isActive}kategori yok!",StatusCodes.Status404NotFound);
+       }
+       return ResponseDto<int>.Success(count,StatusCodes.Status200OK);
     }
 
-    public Task<ResponseDto<List<ProductDto>>> GetAllAsync()
+    public async Task<ResponseDto<List<ProductDto>>> GetAllAsync()
     {
-        throw new NotImplementedException();
+        List<Product>productList=await _productRepository.GetAllAsync(null,x=>x.Include(y=>y.Category));
+        if(productList.Count==0)
+        {
+            return ResponseDto<List<ProductDto>>.Fail($"Hiç ürün bulunamadı",StatusCodes.Status404NotFound); 
+        }
+        List<ProductDto> productDtoList=_mapper.Map<List<ProductDto>>(productList);
+        return ResponseDto<List<ProductDto>>.Success(productDtoList,StatusCodes.Status200OK);
     }
 
-    public Task<ResponseDto<List<ProductDto>>> GetByCategoryAsync(int categoryId)
+        public async Task<ResponseDto<List<ProductDto>>> GetAllByCategoryId(int categoryId)
     {
-        throw new NotImplementedException();
+          List<Product>productList=await _productRepository.GetAllAsync(x=>x.IsActive==true && x.CategoryId==categoryId, x=>x.Include(y=>y.Category));
+          var category=await _categoryRepository.GetByIdASync(x=>x.Id==categoryId);
+          
+        if(productList.Count==0)
+        {
+            return ResponseDto<List<ProductDto>>.Fail($"Hiç {category.Name}ürün bulunamadı",StatusCodes.Status404NotFound); 
+        }
+        List<ProductDto> productDtoList=_mapper.Map<List<ProductDto>>(productList);
+        return ResponseDto<List<ProductDto>>.Success(productDtoList,StatusCodes.Status200OK);
     }
 
-    public Task<ResponseDto<ProductDto>> GetByIdAsync(int id)
+    public async Task<ResponseDto<ProductDto>> GetByIdAsync(int id)
     {
-        throw new NotImplementedException();
+       Product product=await _productRepository.GetByIdASync(x=>x.Id==id,x=> x.Include(y=> y.Category));
+          
+          
+        if(product==null)
+        {
+            return ResponseDto<List<ProductDto>>.Fail($"Hiç {category.Name}ürün bulunamadı",StatusCodes.Status404NotFound); 
+        }
+        ProductDto productDto=_mapper.Map<ProductDto>(product);
+        return ResponseDto<List<ProductDto>>.Success(productDtoList,StatusCodes.Status200OK);
     }
 
     public Task<ResponseDto<int>> GetCountAsync()
