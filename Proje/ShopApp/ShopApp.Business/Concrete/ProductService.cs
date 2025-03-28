@@ -103,31 +103,60 @@ public class ProductService : IProductService
           
         if(product==null)
         {
-            return ResponseDto<List<ProductDto>>.Fail($"Hiç {category.Name}ürün bulunamadı",StatusCodes.Status404NotFound); 
+            return ResponseDto<ProductDto>.Fail($"Hiç {id}id'li ürün bulunamadı",StatusCodes.Status404NotFound); 
         }
         ProductDto productDto=_mapper.Map<ProductDto>(product);
-        return ResponseDto<List<ProductDto>>.Success(productDtoList,StatusCodes.Status200OK);
+        return ResponseDto<ProductDto>.Success(productDto,StatusCodes.Status200OK);
     }
 
-    public Task<ResponseDto<int>> GetCountAsync()
+    public  async Task<ResponseDto<int>> GetCountAsync()
     {
-        throw new NotImplementedException();
+         int count=await _productRepository.GetCountAsync();
+    
+       if(count==0)
+       {
+        return ResponseDto<int>.Fail($"Ürün sayısı 0",StatusCodes.Status404NotFound);
+       }
+       return ResponseDto<int>.Success(count,StatusCodes.Status200OK);
     }
 
-    public Task<ResponseDto<List<ProductDto>>> GetHomeAsync(bool isHome = true)
+    public async Task<ResponseDto<List<ProductDto>>> GetHomeAsync(bool isHome = true)
     {
-        throw new NotImplementedException();
+         List<Product> productList=await _productRepository.GetAllAsync(x=>x.IsActive==true && x.IsHome==isHome,x=>x.Include(y=>y.Category)); 
+        string statusText=isHome ? "Ana Sayfa ürünü bulunamadı" : "Ana sayfa olmayan ürün";
+        if(productList.Count==0 )
+        {
+            return ResponseDto<List<ProductDto>>.Fail($"Hiç {statusText}ürün bulunamadı",StatusCodes.Status404NotFound); 
+        }
+        List<ProductDto> productDtosList= _mapper.Map<List<ProductDto>>(productList);
+        return ResponseDto<List<ProductDto>>.Success(productDtosList ,StatusCodes.Status200OK);
     }
 
-    public Task<ResponseDto<int>> GetHomeCountAsync(bool isActive = true)
+    public async Task<ResponseDto<int>> GetHomeCountAsync(bool isHome  = true)
     {
-        throw new NotImplementedException();
+        int count=await _productRepository.GetCountAsync(x=>x.IsActive==true && x.IsHome==isHome);
+        string statusText=isHome ? "Ana Sayfa ürünü bulunamadı" : "Ana sayfa olmayan ürün"; 
+       if(count==0)
+       {
+        return ResponseDto<int>.Fail($"{isHome}sayısı 0",StatusCodes.Status404NotFound);
+       }
+       return ResponseDto<int>.Success(count,StatusCodes.Status200OK);
     }
 
-    public Task<ResponseDto<ProductDto>> UpdateAsync(ProductUpdateDto productUpdateDto)
+    public async Task<ResponseDto<ProductDto>> UpdateAsync(ProductUpdateDto productUpdateDto)
     {
-        throw new NotImplementedException();
-    }
+       var product=await _productRepository.GetByIdASync(x=>x.Id==productUpdateDto.Id);
+       if(product==null)
+       {
+        return ResponseDto<ProductDto>.Fail($"{productUpdateDto.Id}id'li ürün bulunamadı",StatusCodes.Status404NotFound);
+       }
+       product =_mapper.Map<Product>(productUpdateDto); 
+       product.ModifiedDate=DateTime.Now;
+       product.Url=CustomUrlHelper.GetUrl(productUpdateDto.Name);
+       await _productRepository.UpdateAsync(product);
+       var productDto=_mapper.Map<ProductDto>(product);
+        return ResponseDto<ProductDto>.Success(productDto,StatusCodes.Status200OK); 
+       }
 
     public Task<ResponseDto<NoContent>> UpdateIsActiveAsync(int id)
     {
