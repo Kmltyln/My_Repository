@@ -2,7 +2,6 @@
 using System;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
-using Microsoft.EntityFrameworkCore.Metadata;
 using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 using ShopApp.Data;
@@ -12,54 +11,48 @@ using ShopApp.Data;
 namespace ShopApp.Data.Migrations
 {
     [DbContext(typeof(AppDbContext))]
-    [Migration("20250313213934_InitialDb")]
+    [Migration("20250329221152_InitialDb")]
     partial class InitialDb
     {
         /// <inheritdoc />
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
-            modelBuilder
-                .HasAnnotation("ProductVersion", "8.0.7")
-                .HasAnnotation("Relational:MaxIdentifierLength", 128);
-
-            SqlServerModelBuilderExtensions.UseIdentityColumns(modelBuilder);
+            modelBuilder.HasAnnotation("ProductVersion", "8.0.7");
 
             modelBuilder.Entity("ShopApp.Entity.Concrete.Category", b =>
                 {
                     b.Property<int>("Id")
                         .ValueGeneratedOnAdd()
-                        .HasColumnType("int");
-
-                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"));
+                        .HasColumnType("INTEGER");
 
                     b.Property<DateTime>("CreatedDate")
                         .ValueGeneratedOnAdd()
-                        .HasColumnType("datetime2")
-                        .HasDefaultValueSql("getdate()");
+                        .HasColumnType("TEXT")
+                        .HasDefaultValueSql("date('now')");
 
                     b.Property<string>("Description")
                         .IsRequired()
                         .HasMaxLength(500)
-                        .HasColumnType("nvarchar(500)");
+                        .HasColumnType("TEXT");
 
                     b.Property<bool>("IsActive")
-                        .HasColumnType("bit");
+                        .HasColumnType("INTEGER");
 
                     b.Property<DateTime>("ModifiedDate")
                         .ValueGeneratedOnAdd()
-                        .HasColumnType("datetime2")
-                        .HasDefaultValueSql("getdate()");
+                        .HasColumnType("TEXT")
+                        .HasDefaultValueSql("date('now')");
 
                     b.Property<string>("Name")
                         .IsRequired()
                         .HasMaxLength(100)
-                        .HasColumnType("nvarchar(100)");
+                        .HasColumnType("TEXT");
 
                     b.Property<string>("Url")
                         .IsRequired()
                         .HasMaxLength(500)
-                        .HasColumnType("nvarchar(500)");
+                        .HasColumnType("TEXT");
 
                     b.HasKey("Id");
 
@@ -69,60 +62,60 @@ namespace ShopApp.Data.Migrations
                         new
                         {
                             Id = 1,
-                            CreatedDate = new DateTime(2025, 3, 14, 0, 39, 31, 372, DateTimeKind.Local).AddTicks(2611),
+                            CreatedDate = new DateTime(2025, 3, 30, 1, 11, 48, 914, DateTimeKind.Local).AddTicks(6868),
                             Description = "Genel kategori",
                             IsActive = true,
-                            ModifiedDate = new DateTime(2025, 3, 14, 0, 39, 31, 372, DateTimeKind.Local).AddTicks(2626),
+                            ModifiedDate = new DateTime(2025, 3, 30, 1, 11, 48, 914, DateTimeKind.Local).AddTicks(6878),
                             Name = "Genel",
                             Url = "genel"
                         },
                         new
                         {
                             Id = 2,
-                            CreatedDate = new DateTime(2025, 3, 14, 0, 39, 31, 372, DateTimeKind.Local).AddTicks(2630),
+                            CreatedDate = new DateTime(2025, 3, 30, 1, 11, 48, 914, DateTimeKind.Local).AddTicks(6881),
                             Description = "Telefonlar",
                             IsActive = true,
-                            ModifiedDate = new DateTime(2025, 3, 14, 0, 39, 31, 372, DateTimeKind.Local).AddTicks(2630),
+                            ModifiedDate = new DateTime(2025, 3, 30, 1, 11, 48, 914, DateTimeKind.Local).AddTicks(6881),
                             Name = "Telefon",
                             Url = "telefon"
                         },
                         new
                         {
                             Id = 3,
-                            CreatedDate = new DateTime(2025, 3, 14, 0, 39, 31, 372, DateTimeKind.Local).AddTicks(2632),
+                            CreatedDate = new DateTime(2025, 3, 30, 1, 11, 48, 914, DateTimeKind.Local).AddTicks(6883),
                             Description = "Elektronik ürünler",
                             IsActive = true,
-                            ModifiedDate = new DateTime(2025, 3, 14, 0, 39, 31, 372, DateTimeKind.Local).AddTicks(2633),
+                            ModifiedDate = new DateTime(2025, 3, 30, 1, 11, 48, 914, DateTimeKind.Local).AddTicks(6884),
                             Name = "Elektronik",
                             Url = "elektronik"
                         },
                         new
                         {
                             Id = 4,
-                            CreatedDate = new DateTime(2025, 3, 14, 0, 39, 31, 372, DateTimeKind.Local).AddTicks(2635),
+                            CreatedDate = new DateTime(2025, 3, 30, 1, 11, 48, 914, DateTimeKind.Local).AddTicks(6885),
                             Description = "Bilgisayarlar",
                             IsActive = true,
-                            ModifiedDate = new DateTime(2025, 3, 14, 0, 39, 31, 372, DateTimeKind.Local).AddTicks(2635),
+                            ModifiedDate = new DateTime(2025, 3, 30, 1, 11, 48, 914, DateTimeKind.Local).AddTicks(6886),
                             Name = "Bilgisayar",
                             Url = "bilgisayar"
                         },
                         new
                         {
                             Id = 5,
-                            CreatedDate = new DateTime(2025, 3, 14, 0, 39, 31, 372, DateTimeKind.Local).AddTicks(2637),
+                            CreatedDate = new DateTime(2025, 3, 30, 1, 11, 48, 914, DateTimeKind.Local).AddTicks(6888),
                             Description = "Beyaz Eşyalar",
                             IsActive = true,
-                            ModifiedDate = new DateTime(2025, 3, 14, 0, 39, 31, 372, DateTimeKind.Local).AddTicks(2638),
+                            ModifiedDate = new DateTime(2025, 3, 30, 1, 11, 48, 914, DateTimeKind.Local).AddTicks(6888),
                             Name = "Beyaz Eşya",
                             Url = "beyaz-esya"
                         },
                         new
                         {
                             Id = 6,
-                            CreatedDate = new DateTime(2025, 3, 14, 0, 39, 31, 372, DateTimeKind.Local).AddTicks(2639),
+                            CreatedDate = new DateTime(2025, 3, 30, 1, 11, 48, 914, DateTimeKind.Local).AddTicks(6890),
                             Description = "Yurt dışından gelen ürünler",
                             IsActive = false,
-                            ModifiedDate = new DateTime(2025, 3, 14, 0, 39, 31, 372, DateTimeKind.Local).AddTicks(2640),
+                            ModifiedDate = new DateTime(2025, 3, 30, 1, 11, 48, 914, DateTimeKind.Local).AddTicks(6891),
                             Name = "Yurt Dışı",
                             Url = "yurt-disi"
                         });
@@ -132,45 +125,43 @@ namespace ShopApp.Data.Migrations
                 {
                     b.Property<int>("Id")
                         .ValueGeneratedOnAdd()
-                        .HasColumnType("int");
-
-                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"));
+                        .HasColumnType("INTEGER");
 
                     b.Property<int>("CategoryId")
-                        .HasColumnType("int");
+                        .HasColumnType("INTEGER");
 
                     b.Property<DateTime>("CreatedDate")
-                        .HasColumnType("datetime2");
+                        .HasColumnType("TEXT");
 
                     b.Property<string>("ImageUrl")
                         .IsRequired()
-                        .HasColumnType("nvarchar(max)");
+                        .HasColumnType("TEXT");
 
                     b.Property<bool>("IsActive")
-                        .HasColumnType("bit");
+                        .HasColumnType("INTEGER");
 
                     b.Property<bool>("IsHome")
-                        .HasColumnType("bit");
+                        .HasColumnType("INTEGER");
 
                     b.Property<DateTime>("ModifiedDate")
-                        .HasColumnType("datetime2");
+                        .HasColumnType("TEXT");
 
                     b.Property<string>("Name")
                         .IsRequired()
                         .HasMaxLength(250)
-                        .HasColumnType("nvarchar(250)");
+                        .HasColumnType("TEXT");
 
                     b.Property<decimal>("Price")
-                        .HasColumnType("decimal(18,2)");
+                        .HasColumnType("TEXT");
 
                     b.Property<string>("Properties")
                         .IsRequired()
-                        .HasColumnType("nvarchar(max)");
+                        .HasColumnType("TEXT");
 
                     b.Property<string>("Url")
                         .IsRequired()
                         .HasMaxLength(500)
-                        .HasColumnType("nvarchar(500)");
+                        .HasColumnType("TEXT");
 
                     b.HasKey("Id");
 
@@ -183,11 +174,11 @@ namespace ShopApp.Data.Migrations
                         {
                             Id = 1,
                             CategoryId = 2,
-                            CreatedDate = new DateTime(2025, 3, 14, 0, 39, 31, 379, DateTimeKind.Local).AddTicks(9858),
+                            CreatedDate = new DateTime(2025, 3, 30, 1, 11, 48, 915, DateTimeKind.Local).AddTicks(2448),
                             ImageUrl = "1.png",
                             IsActive = true,
                             IsHome = true,
-                            ModifiedDate = new DateTime(2025, 3, 14, 0, 39, 31, 379, DateTimeKind.Local).AddTicks(9859),
+                            ModifiedDate = new DateTime(2025, 3, 30, 1, 11, 48, 915, DateTimeKind.Local).AddTicks(2449),
                             Name = "IPhone 14",
                             Price = 59000m,
                             Properties = "Harika bir telefon",
@@ -197,11 +188,11 @@ namespace ShopApp.Data.Migrations
                         {
                             Id = 2,
                             CategoryId = 2,
-                            CreatedDate = new DateTime(2025, 3, 14, 0, 39, 31, 379, DateTimeKind.Local).AddTicks(9865),
+                            CreatedDate = new DateTime(2025, 3, 30, 1, 11, 48, 915, DateTimeKind.Local).AddTicks(2454),
                             ImageUrl = "2.png",
                             IsActive = true,
                             IsHome = false,
-                            ModifiedDate = new DateTime(2025, 3, 14, 0, 39, 31, 379, DateTimeKind.Local).AddTicks(9866),
+                            ModifiedDate = new DateTime(2025, 3, 30, 1, 11, 48, 915, DateTimeKind.Local).AddTicks(2455),
                             Name = "IPhone 14 Pro",
                             Price = 69000m,
                             Properties = "Bu da harika bir telefon",
@@ -211,11 +202,11 @@ namespace ShopApp.Data.Migrations
                         {
                             Id = 3,
                             CategoryId = 2,
-                            CreatedDate = new DateTime(2025, 3, 14, 0, 39, 31, 379, DateTimeKind.Local).AddTicks(9870),
+                            CreatedDate = new DateTime(2025, 3, 30, 1, 11, 48, 915, DateTimeKind.Local).AddTicks(2459),
                             ImageUrl = "3.png",
                             IsActive = true,
                             IsHome = true,
-                            ModifiedDate = new DateTime(2025, 3, 14, 0, 39, 31, 379, DateTimeKind.Local).AddTicks(9871),
+                            ModifiedDate = new DateTime(2025, 3, 30, 1, 11, 48, 915, DateTimeKind.Local).AddTicks(2460),
                             Name = "Samsung S23",
                             Price = 49000m,
                             Properties = "İdare eder",
@@ -225,11 +216,11 @@ namespace ShopApp.Data.Migrations
                         {
                             Id = 4,
                             CategoryId = 2,
-                            CreatedDate = new DateTime(2025, 3, 14, 0, 39, 31, 379, DateTimeKind.Local).AddTicks(9875),
+                            CreatedDate = new DateTime(2025, 3, 30, 1, 11, 48, 915, DateTimeKind.Local).AddTicks(2463),
                             ImageUrl = "4.png",
                             IsActive = true,
                             IsHome = true,
-                            ModifiedDate = new DateTime(2025, 3, 14, 0, 39, 31, 379, DateTimeKind.Local).AddTicks(9876),
+                            ModifiedDate = new DateTime(2025, 3, 30, 1, 11, 48, 915, DateTimeKind.Local).AddTicks(2464),
                             Name = "Xaomi Note 4",
                             Price = 39000m,
                             Properties = "Harika bir telefon",
@@ -239,11 +230,11 @@ namespace ShopApp.Data.Migrations
                         {
                             Id = 5,
                             CategoryId = 4,
-                            CreatedDate = new DateTime(2025, 3, 14, 0, 39, 31, 379, DateTimeKind.Local).AddTicks(9880),
+                            CreatedDate = new DateTime(2025, 3, 30, 1, 11, 48, 915, DateTimeKind.Local).AddTicks(2468),
                             ImageUrl = "5.png",
                             IsActive = true,
                             IsHome = true,
-                            ModifiedDate = new DateTime(2025, 3, 14, 0, 39, 31, 379, DateTimeKind.Local).AddTicks(9881),
+                            ModifiedDate = new DateTime(2025, 3, 30, 1, 11, 48, 915, DateTimeKind.Local).AddTicks(2469),
                             Name = "MacBook Air M2",
                             Price = 52000m,
                             Properties = "M2nin gücü",
@@ -253,11 +244,11 @@ namespace ShopApp.Data.Migrations
                         {
                             Id = 6,
                             CategoryId = 4,
-                            CreatedDate = new DateTime(2025, 3, 14, 0, 39, 31, 379, DateTimeKind.Local).AddTicks(9885),
+                            CreatedDate = new DateTime(2025, 3, 30, 1, 11, 48, 915, DateTimeKind.Local).AddTicks(2472),
                             ImageUrl = "6.png",
                             IsActive = true,
                             IsHome = false,
-                            ModifiedDate = new DateTime(2025, 3, 14, 0, 39, 31, 379, DateTimeKind.Local).AddTicks(9886),
+                            ModifiedDate = new DateTime(2025, 3, 30, 1, 11, 48, 915, DateTimeKind.Local).AddTicks(2473),
                             Name = "MacBook Pro M3",
                             Price = 79000m,
                             Properties = "16 Gb ram",
@@ -267,11 +258,11 @@ namespace ShopApp.Data.Migrations
                         {
                             Id = 7,
                             CategoryId = 5,
-                            CreatedDate = new DateTime(2025, 3, 14, 0, 39, 31, 379, DateTimeKind.Local).AddTicks(9890),
+                            CreatedDate = new DateTime(2025, 3, 30, 1, 11, 48, 915, DateTimeKind.Local).AddTicks(2477),
                             ImageUrl = "7.png",
                             IsActive = true,
                             IsHome = true,
-                            ModifiedDate = new DateTime(2025, 3, 14, 0, 39, 31, 379, DateTimeKind.Local).AddTicks(9891),
+                            ModifiedDate = new DateTime(2025, 3, 30, 1, 11, 48, 915, DateTimeKind.Local).AddTicks(2478),
                             Name = "Vestel Çamaşır Makinesi X65",
                             Price = 19000m,
                             Properties = "Akıllı makine",
@@ -281,11 +272,11 @@ namespace ShopApp.Data.Migrations
                         {
                             Id = 8,
                             CategoryId = 5,
-                            CreatedDate = new DateTime(2025, 3, 14, 0, 39, 31, 379, DateTimeKind.Local).AddTicks(9894),
+                            CreatedDate = new DateTime(2025, 3, 30, 1, 11, 48, 915, DateTimeKind.Local).AddTicks(2482),
                             ImageUrl = "8.png",
                             IsActive = true,
                             IsHome = false,
-                            ModifiedDate = new DateTime(2025, 3, 14, 0, 39, 31, 379, DateTimeKind.Local).AddTicks(9895),
+                            ModifiedDate = new DateTime(2025, 3, 30, 1, 11, 48, 915, DateTimeKind.Local).AddTicks(2483),
                             Name = "Arçelik Çamaşır Makinesi A-4",
                             Price = 21000m,
                             Properties = "Süper hızlı makine",
@@ -295,11 +286,11 @@ namespace ShopApp.Data.Migrations
                         {
                             Id = 9,
                             CategoryId = 3,
-                            CreatedDate = new DateTime(2025, 3, 14, 0, 39, 31, 379, DateTimeKind.Local).AddTicks(9899),
+                            CreatedDate = new DateTime(2025, 3, 30, 1, 11, 48, 915, DateTimeKind.Local).AddTicks(2486),
                             ImageUrl = "9.png",
                             IsActive = true,
                             IsHome = true,
-                            ModifiedDate = new DateTime(2025, 3, 14, 0, 39, 31, 379, DateTimeKind.Local).AddTicks(9900),
+                            ModifiedDate = new DateTime(2025, 3, 30, 1, 11, 48, 915, DateTimeKind.Local).AddTicks(2487),
                             Name = "Hoop Dijital Radyo X96",
                             Price = 1250m,
                             Properties = "Klasik radyo keyfi",
@@ -309,11 +300,11 @@ namespace ShopApp.Data.Migrations
                         {
                             Id = 10,
                             CategoryId = 3,
-                            CreatedDate = new DateTime(2025, 3, 14, 0, 39, 31, 379, DateTimeKind.Local).AddTicks(9904),
+                            CreatedDate = new DateTime(2025, 3, 30, 1, 11, 48, 915, DateTimeKind.Local).AddTicks(2491),
                             ImageUrl = "10.png",
                             IsActive = true,
                             IsHome = true,
-                            ModifiedDate = new DateTime(2025, 3, 14, 0, 39, 31, 379, DateTimeKind.Local).AddTicks(9905),
+                            ModifiedDate = new DateTime(2025, 3, 30, 1, 11, 48, 915, DateTimeKind.Local).AddTicks(2492),
                             Name = "Xaomi Dijital Baskül",
                             Price = 2100m,
                             Properties = "Kilonuzu kontrol edin",
@@ -323,11 +314,11 @@ namespace ShopApp.Data.Migrations
                         {
                             Id = 11,
                             CategoryId = 3,
-                            CreatedDate = new DateTime(2025, 3, 14, 0, 39, 31, 379, DateTimeKind.Local).AddTicks(9909),
+                            CreatedDate = new DateTime(2025, 3, 30, 1, 11, 48, 915, DateTimeKind.Local).AddTicks(2496),
                             ImageUrl = "11.png",
                             IsActive = true,
                             IsHome = true,
-                            ModifiedDate = new DateTime(2025, 3, 14, 0, 39, 31, 379, DateTimeKind.Local).AddTicks(9910),
+                            ModifiedDate = new DateTime(2025, 3, 30, 1, 11, 48, 915, DateTimeKind.Local).AddTicks(2497),
                             Name = "Blaupunkt AC69 Led TV",
                             Price = 9800m,
                             Properties = "Android tv",

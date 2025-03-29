@@ -22,9 +22,9 @@ namespace ShopApp.Data.Concrete.Configs
                 .IsRequired()
                 .HasMaxLength(500);
             builder.Property(x => x.CreatedDate)
-                .HasDefaultValueSql("getdate()");
+                .HasDefaultValueSql("date('now')");
             builder.Property(x => x.ModifiedDate)
-                .HasDefaultValueSql("getdate()");
+                .HasDefaultValueSql("date('now')");
 
             List<Category> categories = [
                 new(){

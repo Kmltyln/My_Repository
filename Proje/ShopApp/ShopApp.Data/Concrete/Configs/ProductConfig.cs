@@ -18,8 +18,8 @@ namespace ShopApp.Data.Concrete.Configs
                 .IsRequired()
                 .HasMaxLength(500);
             builder.Property(x => x.Properties)
-                .IsRequired()
-                .HasColumnType("nvarchar(max)");
+                .IsRequired(); 
+                
 
             List<Product> products = [
                 new()

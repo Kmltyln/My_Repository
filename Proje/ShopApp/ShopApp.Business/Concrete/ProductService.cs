@@ -83,7 +83,12 @@ public class ProductService : IProductService
         return ResponseDto<List<ProductDto>>.Success(productDtoList,StatusCodes.Status200OK);
     }
 
-        public async Task<ResponseDto<List<ProductDto>>> GetAllByCategoryId(int categoryId)
+    public Task<ResponseDto<List<ProductDto>>> GetAllByCategoryAsync(int categoryId)
+    {
+        throw new NotImplementedException();
+    }
+
+    public async Task<ResponseDto<List<ProductDto>>> GetAllByCategoryId(int categoryId)
     {
           List<Product>productList=await _productRepository.GetAllAsync(x=>x.IsActive==true && x.CategoryId==categoryId, x=>x.Include(y=>y.Category));
           var category=await _categoryRepository.GetByIdASync(x=>x.Id==categoryId);
@@ -158,8 +163,28 @@ public class ProductService : IProductService
         return ResponseDto<ProductDto>.Success(productDto,StatusCodes.Status200OK); 
        }
 
-    public Task<ResponseDto<NoContent>> UpdateIsActiveAsync(int id)
+    public async Task<ResponseDto<NoContent>> UpdateIsActiveAsync(int id)
     {
-        throw new NotImplementedException();
+        var product=await _productRepository.GetByIdASync(x=>x.Id==id);
+        if(product==null)
+        {
+            return ResponseDto<NoContent>.Fail($"{id}id'li bir ürün bulunamadı",StatusCodes.Status404NotFound);
+        }
+        product.IsActive=!product.IsActive;
+        await _productRepository.UpdateAsync(product);
+        return ResponseDto<NoContent>.Success(StatusCodes.Status200OK);
+    }
+
+    public async Task<ResponseDto<NoContent>> UpdateIsHomeAsync(int id)
+    {
+         var product=await _productRepository.GetByIdASync(x=>x.Id==id);
+        if(product==null)
+        {
+            return ResponseDto<NoContent>.Fail($"{id}id'li bir ürün bulunamadı",StatusCodes.Status404NotFound);
+        }
+        product.IsHome=!product.IsHome;
+        product.IsActive=true;
+        await _productRepository.UpdateAsync(product);
+        return ResponseDto<NoContent>.Success(StatusCodes.Status200OK);
     }
 }
