@@ -1,17 +1,66 @@
 using System;
 using Microsoft.AspNetCore.Mvc;
 using ShopApp.Business.Abstract;
+using ShopApp.Shared.Dtos.ProductDtos;
 using ShopApp.Shared.Helpers;
 
-namespace ShopApp.API.Controllers;
+namespace ShopApp.API.Controllers
+{
+    [ApiController]
+    [Route("api/[controller]")]  
+    public class ProductsController:CustomControllerBase
+    {
+    private readonly IProductService _productService;
+    
+    public ProductsController(IProductService productService)
+    {
+        _productService=productService;
+    }
+    [HttpPost]
+    public async Task<IActionResult>Create(ProductCreateDto productCreateDto) 
+    {
+        var response =await _productService.CreateAsync(productCreateDto);
+        return CreateActionResult(response);
+    }
+[HttpPut]
+public async Task<IActionResult> Update(ProductUpdateDto productUpdateDto)
+{
+    var response=await _productService.UpdateAsync(productUpdateDto);
+    return CreateActionResult(response);
+}
+[HttpDelete("{id}")]
+public async Task<IActionResult> Delete(int id)
+{
+    var response=await _productService.DeleteAsync(id);
+    return CreateActionResult(response);
+}
 
-public class ProductsController:CustomControllerBase
-{
-private readonly IProductService _productService;
-}
-public ProductsController(IProductService productService)
-{
-    _productService=productService;
-}
 [HttpGet]
-public Task<IActionResult>CreateAsync() 
+public async Task<IActionResult> GetAll()
+{
+    var response=await _productService.GetAllAsync();
+    return CreateActionResult(response);
+}
+
+[HttpGet("{isActive}")]
+public async Task<IActionResult> GetActives(bool isActive=true)
+{
+    var response=await _productService.GetActivesAsync(isActive);
+    return CreateActionResult(response);
+}
+[HttpGet("{isHome}")]
+public async Task<IActionResult> GetHomes(bool isHome=true)
+{
+    var response=await _productService.GetActivesAsync(isHome);
+    return CreateActionResult(response);
+}
+[HttpGet("{categoryId}")]
+public async Task<IActionResult> GetByCategoryId(int categoryId)
+{
+    var response=await _productService.GetAllByCategoryAsync(categoryId);
+    return CreateActionResult(response);
+}
+
+    }
+    
+}

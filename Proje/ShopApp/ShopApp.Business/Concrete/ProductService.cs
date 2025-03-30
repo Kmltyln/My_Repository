@@ -5,6 +5,7 @@ using Microsoft.EntityFrameworkCore;
 using ShopApp.Business.Abstract;
 using ShopApp.Data.Abstract;
 using ShopApp.Entity.Concrete;
+using ShopApp.Shared.Dtos.CategoryDtos;
 using ShopApp.Shared.Dtos.ProductDtos;
 using ShopApp.Shared.Dtos.ResponseDtos;
 using ShopApp.Shared.Helpers;
@@ -35,6 +36,7 @@ public class ProductService : IProductService
             return ResponseDto<ProductDto>.Fail("Bir hata oluştu",StatusCodes.Status400BadRequest);
         }
         ProductDto createdProductDto=_mapper.Map<ProductDto>(createdProduct);
+        createdProductDto.Category=_mapper.Map<CategoryDto>(await _categoryRepository.GetByIdASync(x=>x.Id==createdProductDto.CategoryId));
         return ResponseDto<ProductDto>.Success(createdProductDto,StatusCodes.Status201Created);
     }
 
@@ -160,6 +162,7 @@ public class ProductService : IProductService
        product.Url=CustomUrlHelper.GetUrl(productUpdateDto.Name);
        await _productRepository.UpdateAsync(product);
        var productDto=_mapper.Map<ProductDto>(product);
+       productDto.Category=_mapper.Map<CategoryDto>(await _categoryRepository.GetByIdASync(x=>x.Id==productDto.CategoryId));
         return ResponseDto<ProductDto>.Success(productDto,StatusCodes.Status200OK); 
        }
 
