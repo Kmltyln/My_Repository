@@ -85,15 +85,16 @@ public class ProductService : IProductService
         return ResponseDto<List<ProductDto>>.Success(productDtoList,StatusCodes.Status200OK);
     }
 
-    public Task<ResponseDto<List<ProductDto>>> GetAllByCategoryAsync(int categoryId)
-    {
-        throw new NotImplementedException();
-    }
+    
 
-    public async Task<ResponseDto<List<ProductDto>>> GetAllByCategoryId(int categoryId)
+    public async Task<ResponseDto<List<ProductDto>>> GetAllByCategoryIdAsync(int categoryId)
     {
           List<Product>productList=await _productRepository.GetAllAsync(x=>x.IsActive==true && x.CategoryId==categoryId, x=>x.Include(y=>y.Category));
           var category=await _categoryRepository.GetByIdASync(x=>x.Id==categoryId);
+          if(category==null)
+          {
+            return ResponseDto<List<ProductDto>>.Fail("Böyle bir kategori yok!",StatusCodes.Status404NotFound);
+          }
           
         if(productList.Count==0)
         {
