@@ -3298,11 +3298,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "d:\\My_Repository\\Proje\\ShopApp\\ShopApp.Business\\ShopApp.Business.csproj",
+      "projectUniqueName": "D:\\My_Repository\\Proje\\ShopApp\\ShopApp.Business\\ShopApp.Business.csproj",
       "projectName": "ShopApp.Business",
-      "projectPath": "d:\\My_Repository\\Proje\\ShopApp\\ShopApp.Business\\ShopApp.Business.csproj",
+      "projectPath": "D:\\My_Repository\\Proje\\ShopApp\\ShopApp.Business\\ShopApp.Business.csproj",
       "packagesPath": "C:\\Users\\Possessed One.000\\.nuget\\packages\\",
-      "outputPath": "d:\\My_Repository\\Proje\\ShopApp\\ShopApp.Business\\obj\\",
+      "outputPath": "D:\\My_Repository\\Proje\\ShopApp\\ShopApp.Business\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "D:\\Microsoft Visual Studio\\NuGetPackages"
@@ -3323,11 +3323,11 @@
         "net9.0": {
           "targetAlias": "net9.0",
           "projectReferences": {
-            "d:\\My_Repository\\Proje\\ShopApp\\ShopApp.Data\\ShopApp.Data.csproj": {
-              "projectPath": "d:\\My_Repository\\Proje\\ShopApp\\ShopApp.Data\\ShopApp.Data.csproj"
+            "D:\\My_Repository\\Proje\\ShopApp\\ShopApp.Data\\ShopApp.Data.csproj": {
+              "projectPath": "D:\\My_Repository\\Proje\\ShopApp\\ShopApp.Data\\ShopApp.Data.csproj"
             },
-            "d:\\My_Repository\\Proje\\ShopApp\\ShopApp.Shared\\ShopApp.Shared.csproj": {
-              "projectPath": "d:\\My_Repository\\Proje\\ShopApp\\ShopApp.Shared\\ShopApp.Shared.csproj"
+            "D:\\My_Repository\\Proje\\ShopApp\\ShopApp.Shared\\ShopApp.Shared.csproj": {
+              "projectPath": "D:\\My_Repository\\Proje\\ShopApp\\ShopApp.Shared\\ShopApp.Shared.csproj"
             }
           }
         }

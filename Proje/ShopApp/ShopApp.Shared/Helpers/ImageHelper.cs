@@ -1,15 +1,52 @@
 using System;
+using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.Http;
 using ShopApp.Shared.Dtos.ImageDtos;
+using ShopApp.Shared.Dtos.ResponseDtos;
 using ShopApp.Shared.Helpers.Abstract;
 
 namespace ShopApp.Shared.Helpers
 {
     public class ImageHelper : IImageHelper
+{   
+    private readonly string _imagesFolder;
+    public ImageHelper(IWebHostEnvironment webHostEnvironment)
     {
-        public Task<ImageDto> UploadImage(IFormFile image, string folderName)
+        _imagesFolder=Path.Combine(webHostEnvironment.WebRootPath +"/images");
+    }
+    private bool IsImageValid(string extension)
+    {
+        string[] correctextensions=[".png",".jpeg","jpg"];
+        bool result=correctextensions.Contains(extension);
+        return result;
+        
+    }
+        public async Task<ResponseDto<ImageDto>> UploadImageAsync(ImageCreateDto imageCreateDto)
         {
-            throw new NotImplementedException();
+           if(imageCreateDto.Image==null || imageCreateDto.Image.Length==0)
+           {
+            return ResponseDto<ImageDto>.Fail("Bir hata oluştu",StatusCodes.Status400BadRequest);
+           }
+           var imageExtension=Path.GetExtension(imageCreateDto.Image.FileName);
+           if(!IsImageValid(imageExtension))
+           {
+            return ResponseDto<ImageDto>.Fail("Geçersiz format",StatusCodes.Status400BadRequest);
+           }
+           //localhost:5200/images/products
+           //localhost:5200/images/categories
+           //localhost:5200/images/members
+           var targetFolder=Path.Combine(_imagesFolder,imageCreateDto.FolderName??"general");
+           if(!Directory.Exists(targetFolder))
+           {
+            Directory.CreateDirectory(targetFolder);
+
+           }
+           var fileName=$"{Guid.NewGuid()}{imageExtension}";
+           var fullPath=Path.Combine(targetFolder,fileName);
+        using (var stream=new FileStream(fullPath,FileMode.Create))
+        {
+
+        }
         }
     }
 }

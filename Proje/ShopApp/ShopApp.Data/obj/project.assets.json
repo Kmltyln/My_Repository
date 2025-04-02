@@ -3219,11 +3219,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "d:\\My_Repository\\Proje\\ShopApp\\ShopApp.Data\\ShopApp.Data.csproj",
+      "projectUniqueName": "D:\\My_Repository\\Proje\\ShopApp\\ShopApp.Data\\ShopApp.Data.csproj",
       "projectName": "ShopApp.Data",
-      "projectPath": "d:\\My_Repository\\Proje\\ShopApp\\ShopApp.Data\\ShopApp.Data.csproj",
+      "projectPath": "D:\\My_Repository\\Proje\\ShopApp\\ShopApp.Data\\ShopApp.Data.csproj",
       "packagesPath": "C:\\Users\\Possessed One.000\\.nuget\\packages\\",
-      "outputPath": "d:\\My_Repository\\Proje\\ShopApp\\ShopApp.Data\\obj\\",
+      "outputPath": "D:\\My_Repository\\Proje\\ShopApp\\ShopApp.Data\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "D:\\Microsoft Visual Studio\\NuGetPackages"
@@ -3244,11 +3244,11 @@
         "net9.0": {
           "targetAlias": "net9.0",
           "projectReferences": {
-            "d:\\My_Repository\\Proje\\ShopApp\\ShopApp.Entity\\ShopApp.Entity.csproj": {
-              "projectPath": "d:\\My_Repository\\Proje\\ShopApp\\ShopApp.Entity\\ShopApp.Entity.csproj"
+            "D:\\My_Repository\\Proje\\ShopApp\\ShopApp.Entity\\ShopApp.Entity.csproj": {
+              "projectPath": "D:\\My_Repository\\Proje\\ShopApp\\ShopApp.Entity\\ShopApp.Entity.csproj"
             },
-            "d:\\My_Repository\\Proje\\ShopApp\\ShopApp.Shared\\ShopApp.Shared.csproj": {
-              "projectPath": "d:\\My_Repository\\Proje\\ShopApp\\ShopApp.Shared\\ShopApp.Shared.csproj"
+            "D:\\My_Repository\\Proje\\ShopApp\\ShopApp.Shared\\ShopApp.Shared.csproj": {
+              "projectPath": "D:\\My_Repository\\Proje\\ShopApp\\ShopApp.Shared\\ShopApp.Shared.csproj"
             }
           }
         }
