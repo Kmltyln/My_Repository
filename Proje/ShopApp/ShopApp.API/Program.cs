@@ -4,6 +4,8 @@ using ShopApp.Business.Concrete;
 using ShopApp.Data;
 using ShopApp.Data.Abstract;
 using ShopApp.Data.Concrete.Repositories;
+using ShopApp.Shared.Helpers;
+using ShopApp.Shared.Helpers.Abstract;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -21,6 +23,7 @@ builder.Services.AddScoped<IProductRepository,ProductRepository>();
 builder.Services.AddScoped<ICategoryService, CategoryService>();
 builder.Services.AddScoped<IProductService, ProductService>();
 #endregion
+builder.Services.AddScoped<IImageHelper,ImageHelper>(); 
 builder.Services.AddAutoMapper(AppDomain.CurrentDomain.GetAssemblies());
 var app = builder.Build();
 

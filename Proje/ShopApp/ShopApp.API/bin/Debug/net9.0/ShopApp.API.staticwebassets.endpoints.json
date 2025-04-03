@@ -3,8 +3,8 @@
   "ManifestType": "Build",
   "Endpoints": [
     {
-      "Route": "1.1jrb4w05bm.png",
-      "AssetFile": "1.png",
+      "Route": "products/1.1jrb4w05bm.png",
+      "AssetFile": "products/1.png",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -43,13 +43,13 @@
         },
         {
           "Name": "label",
-          "Value": "1.png"
+          "Value": "products/1.png"
         }
       ]
     },
     {
-      "Route": "1.png",
-      "AssetFile": "1.png",
+      "Route": "products/1.png",
+      "AssetFile": "products/1.png",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -85,8 +85,8 @@
       ]
     },
     {
-      "Route": "10.cc7ttcix1m.png",
-      "AssetFile": "10.png",
+      "Route": "products/10.cc7ttcix1m.png",
+      "AssetFile": "products/10.png",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -125,13 +125,13 @@
         },
         {
           "Name": "label",
-          "Value": "10.png"
+          "Value": "products/10.png"
         }
       ]
     },
     {
-      "Route": "10.png",
-      "AssetFile": "10.png",
+      "Route": "products/10.png",
+      "AssetFile": "products/10.png",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -167,8 +167,8 @@
       ]
     },
     {
-      "Route": "11.png",
-      "AssetFile": "11.png",
+      "Route": "products/11.png",
+      "AssetFile": "products/11.png",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -204,8 +204,8 @@
       ]
     },
     {
-      "Route": "11.za2a06px91.png",
-      "AssetFile": "11.png",
+      "Route": "products/11.za2a06px91.png",
+      "AssetFile": "products/11.png",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -244,13 +244,13 @@
         },
         {
           "Name": "label",
-          "Value": "11.png"
+          "Value": "products/11.png"
         }
       ]
     },
     {
-      "Route": "12.png",
-      "AssetFile": "12.png",
+      "Route": "products/12.png",
+      "AssetFile": "products/12.png",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -286,8 +286,8 @@
       ]
     },
     {
-      "Route": "12.zrwbf65cy1.png",
-      "AssetFile": "12.png",
+      "Route": "products/12.zrwbf65cy1.png",
+      "AssetFile": "products/12.png",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -326,13 +326,13 @@
         },
         {
           "Name": "label",
-          "Value": "12.png"
+          "Value": "products/12.png"
         }
       ]
     },
     {
-      "Route": "13.png",
-      "AssetFile": "13.png",
+      "Route": "products/13.png",
+      "AssetFile": "products/13.png",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -368,8 +368,8 @@
       ]
     },
     {
-      "Route": "13.s91ca7anga.png",
-      "AssetFile": "13.png",
+      "Route": "products/13.s91ca7anga.png",
+      "AssetFile": "products/13.png",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -408,13 +408,13 @@
         },
         {
           "Name": "label",
-          "Value": "13.png"
+          "Value": "products/13.png"
         }
       ]
     },
     {
-      "Route": "14.png",
-      "AssetFile": "14.png",
+      "Route": "products/14.png",
+      "AssetFile": "products/14.png",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -450,8 +450,8 @@
       ]
     },
     {
-      "Route": "14.ybjcgfptwr.png",
-      "AssetFile": "14.png",
+      "Route": "products/14.ybjcgfptwr.png",
+      "AssetFile": "products/14.png",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -490,13 +490,13 @@
         },
         {
           "Name": "label",
-          "Value": "14.png"
+          "Value": "products/14.png"
         }
       ]
     },
     {
-      "Route": "15.png",
-      "AssetFile": "15.png",
+      "Route": "products/15.png",
+      "AssetFile": "products/15.png",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -532,8 +532,8 @@
       ]
     },
     {
-      "Route": "15.s42lmqqmfp.png",
-      "AssetFile": "15.png",
+      "Route": "products/15.s42lmqqmfp.png",
+      "AssetFile": "products/15.png",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -572,13 +572,13 @@
         },
         {
           "Name": "label",
-          "Value": "15.png"
+          "Value": "products/15.png"
         }
       ]
     },
     {
-      "Route": "16.png",
-      "AssetFile": "16.png",
+      "Route": "products/16.png",
+      "AssetFile": "products/16.png",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -614,8 +614,8 @@
       ]
     },
     {
-      "Route": "16.zx4vyv4lwp.png",
-      "AssetFile": "16.png",
+      "Route": "products/16.zx4vyv4lwp.png",
+      "AssetFile": "products/16.png",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -654,13 +654,13 @@
         },
         {
           "Name": "label",
-          "Value": "16.png"
+          "Value": "products/16.png"
         }
       ]
     },
     {
-      "Route": "17.png",
-      "AssetFile": "17.png",
+      "Route": "products/17.png",
+      "AssetFile": "products/17.png",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -696,8 +696,8 @@
       ]
     },
     {
-      "Route": "17.t4jfwuwnlr.png",
-      "AssetFile": "17.png",
+      "Route": "products/17.t4jfwuwnlr.png",
+      "AssetFile": "products/17.png",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -736,13 +736,13 @@
         },
         {
           "Name": "label",
-          "Value": "17.png"
+          "Value": "products/17.png"
         }
       ]
     },
     {
-      "Route": "18.png",
-      "AssetFile": "18.png",
+      "Route": "products/18.png",
+      "AssetFile": "products/18.png",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -778,8 +778,8 @@
       ]
     },
     {
-      "Route": "18.wrjvo9tin9.png",
-      "AssetFile": "18.png",
+      "Route": "products/18.wrjvo9tin9.png",
+      "AssetFile": "products/18.png",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -818,13 +818,13 @@
         },
         {
           "Name": "label",
-          "Value": "18.png"
+          "Value": "products/18.png"
         }
       ]
     },
     {
-      "Route": "19.png",
-      "AssetFile": "19.png",
+      "Route": "products/19.png",
+      "AssetFile": "products/19.png",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -860,8 +860,8 @@
       ]
     },
     {
-      "Route": "19.tlpejwstvr.png",
-      "AssetFile": "19.png",
+      "Route": "products/19.tlpejwstvr.png",
+      "AssetFile": "products/19.png",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -900,13 +900,13 @@
         },
         {
           "Name": "label",
-          "Value": "19.png"
+          "Value": "products/19.png"
         }
       ]
     },
     {
-      "Route": "2.png",
-      "AssetFile": "2.png",
+      "Route": "products/2.png",
+      "AssetFile": "products/2.png",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -942,8 +942,8 @@
       ]
     },
     {
-      "Route": "2.pwgvqrtnht.png",
-      "AssetFile": "2.png",
+      "Route": "products/2.pwgvqrtnht.png",
+      "AssetFile": "products/2.png",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -982,13 +982,13 @@
         },
         {
           "Name": "label",
-          "Value": "2.png"
+          "Value": "products/2.png"
         }
       ]
     },
     {
-      "Route": "20.png",
-      "AssetFile": "20.png",
+      "Route": "products/20.png",
+      "AssetFile": "products/20.png",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -1024,8 +1024,8 @@
       ]
     },
     {
-      "Route": "20.uwc4ljxhbw.png",
-      "AssetFile": "20.png",
+      "Route": "products/20.uwc4ljxhbw.png",
+      "AssetFile": "products/20.png",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -1064,13 +1064,13 @@
         },
         {
           "Name": "label",
-          "Value": "20.png"
+          "Value": "products/20.png"
         }
       ]
     },
     {
-      "Route": "21.png",
-      "AssetFile": "21.png",
+      "Route": "products/21.png",
+      "AssetFile": "products/21.png",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -1106,8 +1106,8 @@
       ]
     },
     {
-      "Route": "21.uexvudfja9.png",
-      "AssetFile": "21.png",
+      "Route": "products/21.uexvudfja9.png",
+      "AssetFile": "products/21.png",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -1146,13 +1146,13 @@
         },
         {
           "Name": "label",
-          "Value": "21.png"
+          "Value": "products/21.png"
         }
       ]
     },
     {
-      "Route": "22.crysb7fpvr.png",
-      "AssetFile": "22.png",
+      "Route": "products/22.crysb7fpvr.png",
+      "AssetFile": "products/22.png",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -1191,13 +1191,13 @@
         },
         {
           "Name": "label",
-          "Value": "22.png"
+          "Value": "products/22.png"
         }
       ]
     },
     {
-      "Route": "22.png",
-      "AssetFile": "22.png",
+      "Route": "products/22.png",
+      "AssetFile": "products/22.png",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -1233,8 +1233,8 @@
       ]
     },
     {
-      "Route": "3.j9kcqpk5en.png",
-      "AssetFile": "3.png",
+      "Route": "products/3.j9kcqpk5en.png",
+      "AssetFile": "products/3.png",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -1273,13 +1273,13 @@
         },
         {
           "Name": "label",
-          "Value": "3.png"
+          "Value": "products/3.png"
         }
       ]
     },
     {
-      "Route": "3.png",
-      "AssetFile": "3.png",
+      "Route": "products/3.png",
+      "AssetFile": "products/3.png",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -1315,8 +1315,8 @@
       ]
     },
     {
-      "Route": "4.48s61cterp.png",
-      "AssetFile": "4.png",
+      "Route": "products/4.48s61cterp.png",
+      "AssetFile": "products/4.png",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -1355,13 +1355,13 @@
         },
         {
           "Name": "label",
-          "Value": "4.png"
+          "Value": "products/4.png"
         }
       ]
     },
     {
-      "Route": "4.png",
-      "AssetFile": "4.png",
+      "Route": "products/4.png",
+      "AssetFile": "products/4.png",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -1397,8 +1397,8 @@
       ]
     },
     {
-      "Route": "5.png",
-      "AssetFile": "5.png",
+      "Route": "products/5.png",
+      "AssetFile": "products/5.png",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -1434,8 +1434,8 @@
       ]
     },
     {
-      "Route": "5.vn1zsolleq.png",
-      "AssetFile": "5.png",
+      "Route": "products/5.vn1zsolleq.png",
+      "AssetFile": "products/5.png",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -1474,13 +1474,13 @@
         },
         {
           "Name": "label",
-          "Value": "5.png"
+          "Value": "products/5.png"
         }
       ]
     },
     {
-      "Route": "6.bnioq8chw0.png",
-      "AssetFile": "6.png",
+      "Route": "products/6.bnioq8chw0.png",
+      "AssetFile": "products/6.png",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -1519,13 +1519,13 @@
         },
         {
           "Name": "label",
-          "Value": "6.png"
+          "Value": "products/6.png"
         }
       ]
     },
     {
-      "Route": "6.png",
-      "AssetFile": "6.png",
+      "Route": "products/6.png",
+      "AssetFile": "products/6.png",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -1561,8 +1561,8 @@
       ]
     },
     {
-      "Route": "7.3j0vt2atxx.png",
-      "AssetFile": "7.png",
+      "Route": "products/7.3j0vt2atxx.png",
+      "AssetFile": "products/7.png",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -1601,13 +1601,13 @@
         },
         {
           "Name": "label",
-          "Value": "7.png"
+          "Value": "products/7.png"
         }
       ]
     },
     {
-      "Route": "7.png",
-      "AssetFile": "7.png",
+      "Route": "products/7.png",
+      "AssetFile": "products/7.png",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -1643,8 +1643,8 @@
       ]
     },
     {
-      "Route": "8.bwvyq1khrc.png",
-      "AssetFile": "8.png",
+      "Route": "products/8.bwvyq1khrc.png",
+      "AssetFile": "products/8.png",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -1683,13 +1683,13 @@
         },
         {
           "Name": "label",
-          "Value": "8.png"
+          "Value": "products/8.png"
         }
       ]
     },
     {
-      "Route": "8.png",
-      "AssetFile": "8.png",
+      "Route": "products/8.png",
+      "AssetFile": "products/8.png",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -1725,8 +1725,8 @@
       ]
     },
     {
-      "Route": "9.6nt54rqmky.png",
-      "AssetFile": "9.png",
+      "Route": "products/9.6nt54rqmky.png",
+      "AssetFile": "products/9.png",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -1765,13 +1765,13 @@
         },
         {
           "Name": "label",
-          "Value": "9.png"
+          "Value": "products/9.png"
         }
       ]
     },
     {
-      "Route": "9.png",
-      "AssetFile": "9.png",
+      "Route": "products/9.png",
+      "AssetFile": "products/9.png",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -1807,8 +1807,8 @@
       ]
     },
     {
-      "Route": "NoPicture.2gltvqr9h4.png",
-      "AssetFile": "NoPicture.png",
+      "Route": "products/NoPicture.2gltvqr9h4.png",
+      "AssetFile": "products/NoPicture.png",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -1847,13 +1847,13 @@
         },
         {
           "Name": "label",
-          "Value": "NoPicture.png"
+          "Value": "products/NoPicture.png"
         }
       ]
     },
     {
-      "Route": "NoPicture.png",
-      "AssetFile": "NoPicture.png",
+      "Route": "products/NoPicture.png",
+      "AssetFile": "products/NoPicture.png",
       "Selectors": [],
       "ResponseHeaders": [
         {

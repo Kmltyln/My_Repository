@@ -16,7 +16,7 @@ namespace ShopApp.Shared.Helpers
     }
     private bool IsImageValid(string extension)
     {
-        string[] correctextensions=[".png",".jpeg","jpg"];
+        string[] correctextensions=[".png",".jpeg",".jpg"];
         bool result=correctextensions.Contains(extension);
         return result;
         
@@ -25,12 +25,12 @@ namespace ShopApp.Shared.Helpers
         {
            if(imageCreateDto.Image==null || imageCreateDto.Image.Length==0)
            {
-            return ResponseDto<ImageDto>.Fail("Bir hata oluştu",StatusCodes.Status400BadRequest);
+            return ResponseDto<ImageDto>.Fail("Bir hata oluştu!",StatusCodes.Status400BadRequest);
            }
            var imageExtension=Path.GetExtension(imageCreateDto.Image.FileName);
            if(!IsImageValid(imageExtension))
            {
-            return ResponseDto<ImageDto>.Fail("Geçersiz format",StatusCodes.Status400BadRequest);
+            return ResponseDto<ImageDto>.Fail("Geçersiz format!({imageExtension})",StatusCodes.Status400BadRequest);
            }
            //localhost:5200/images/products
            //localhost:5200/images/categories
@@ -45,8 +45,22 @@ namespace ShopApp.Shared.Helpers
            var fullPath=Path.Combine(targetFolder,fileName);
         using (var stream=new FileStream(fullPath,FileMode.Create))
         {
-
+                imageCreateDto.Image.CopyTo(stream);  
+                ImageDto imageDto=new(){
+                    Url=Path.Combine("images",imageCreateDto.FolderName??"general",fileName),
+                    Name=fileName 
+                };  
+                return ResponseDto<ImageDto>.Success(imageDto,StatusCodes.Status201Created);
         }
+        }
+
+        public ResponseDto<NoContent> DeleteImage(ImageDeleteDto imageDeleteDto)
+        {   //localhost:5200/images/products/53543- 
+            var fullPath=Path.Combine("_imagesFolder,imageDeleteDto.FolderName,imageDeleteDto.FileName");
+            if(!File.Exists(fullPath))
+            {
+                return ResponseDto<NoContent>.Fail("Böyle bir resim bulunamadı!",StatusCodes.Status404NotFound);
+            }
         }
     }
 }

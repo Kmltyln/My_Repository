@@ -8,5 +8,7 @@ namespace ShopApp.Shared.Helpers.Abstract
     public interface IImageHelper
     {
     Task<ResponseDto<ImageDto>> UploadImageAsync(ImageCreateDto imageCreateDto);
+    ResponseDto<NoContent>DeleteImage(ImageDeleteDto imageDeleteDto);
+    
     }
 }
