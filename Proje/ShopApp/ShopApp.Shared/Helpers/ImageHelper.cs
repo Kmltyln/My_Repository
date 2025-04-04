@@ -56,11 +56,13 @@ namespace ShopApp.Shared.Helpers
 
         public ResponseDto<NoContent> DeleteImage(ImageDeleteDto imageDeleteDto)
         {   //localhost:5200/images/products/53543- 
-            var fullPath=Path.Combine("_imagesFolder,imageDeleteDto.FolderName,imageDeleteDto.FileName");
+            var fullPath=Path.Combine(_imagesFolder,imageDeleteDto.FolderName,imageDeleteDto.FileName);
             if(!File.Exists(fullPath))
             {
                 return ResponseDto<NoContent>.Fail("Böyle bir resim bulunamadı!",StatusCodes.Status404NotFound);
             }
+            File.Delete(fullPath);
+            return ResponseDto<NoContent>.Success(StatusCodes.Status200OK);
         }
     }
 }

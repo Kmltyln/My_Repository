@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "UlU+OVx20k+Dap4w0WDOPO4v/SGjhxE3jc+UAJnFwAc=",
+  "Hash": "/eucBd3V26XkqiAkj6HZTCnBFuzdfgHHI9kTEsBhmI8=",
   "Source": "ShopApp.API",
   "BasePath": "_content/ShopApp.API",
   "Mode": "Default",
@@ -17,12 +17,12 @@
   ],
   "Assets": [
     {
-      "Identity": "D:\\My_Repository\\Proje\\ShopApp\\ShopApp.API\\wwwroot\\products\\1.png",
+      "Identity": "D:\\My_Repository\\Proje\\ShopApp\\ShopApp.API\\wwwroot\\images\\products\\1.png",
       "SourceId": "ShopApp.API",
       "SourceType": "Discovered",
       "ContentRoot": "D:\\My_Repository\\Proje\\ShopApp\\ShopApp.API\\wwwroot\\",
       "BasePath": "_content/ShopApp.API",
-      "RelativePath": "products/1#[.{fingerprint}]?.png",
+      "RelativePath": "images/products/1#[.{fingerprint}]?.png",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Primary",
@@ -35,15 +35,15 @@
       "Integrity": "41tim5yAbfv2JKxblRcXCCYCnkvHwF72CKnAxRxzRzg=",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\products\\1.png"
+      "OriginalItemSpec": "wwwroot\\images\\products\\1.png"
     },
     {
-      "Identity": "D:\\My_Repository\\Proje\\ShopApp\\ShopApp.API\\wwwroot\\products\\10.png",
+      "Identity": "D:\\My_Repository\\Proje\\ShopApp\\ShopApp.API\\wwwroot\\images\\products\\10.png",
       "SourceId": "ShopApp.API",
       "SourceType": "Discovered",
       "ContentRoot": "D:\\My_Repository\\Proje\\ShopApp\\ShopApp.API\\wwwroot\\",
       "BasePath": "_content/ShopApp.API",
-      "RelativePath": "products/10#[.{fingerprint}]?.png",
+      "RelativePath": "images/products/10#[.{fingerprint}]?.png",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Primary",
@@ -56,15 +56,15 @@
       "Integrity": "bBdq+rzwLD17wKEfrwMptAbvWP8I46vCWpmIX3sMvjk=",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\products\\10.png"
+      "OriginalItemSpec": "wwwroot\\images\\products\\10.png"
     },
     {
-      "Identity": "D:\\My_Repository\\Proje\\ShopApp\\ShopApp.API\\wwwroot\\products\\11.png",
+      "Identity": "D:\\My_Repository\\Proje\\ShopApp\\ShopApp.API\\wwwroot\\images\\products\\11.png",
       "SourceId": "ShopApp.API",
       "SourceType": "Discovered",
       "ContentRoot": "D:\\My_Repository\\Proje\\ShopApp\\ShopApp.API\\wwwroot\\",
       "BasePath": "_content/ShopApp.API",
-      "RelativePath": "products/11#[.{fingerprint}]?.png",
+      "RelativePath": "images/products/11#[.{fingerprint}]?.png",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Primary",
@@ -77,15 +77,15 @@
       "Integrity": "1S39sg96EgSopTumTxjgxLErggXC34WNa9JMkSwYdvU=",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\products\\11.png"
+      "OriginalItemSpec": "wwwroot\\images\\products\\11.png"
     },
     {
-      "Identity": "D:\\My_Repository\\Proje\\ShopApp\\ShopApp.API\\wwwroot\\products\\12.png",
+      "Identity": "D:\\My_Repository\\Proje\\ShopApp\\ShopApp.API\\wwwroot\\images\\products\\12.png",
       "SourceId": "ShopApp.API",
       "SourceType": "Discovered",
       "ContentRoot": "D:\\My_Repository\\Proje\\ShopApp\\ShopApp.API\\wwwroot\\",
       "BasePath": "_content/ShopApp.API",
-      "RelativePath": "products/12#[.{fingerprint}]?.png",
+      "RelativePath": "images/products/12#[.{fingerprint}]?.png",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Primary",
@@ -98,15 +98,15 @@
       "Integrity": "Ue56PoCY04GaQX/YXRm9BJevlX2fxy0+QHnVv6CU+c4=",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\products\\12.png"
+      "OriginalItemSpec": "wwwroot\\images\\products\\12.png"
     },
     {
-      "Identity": "D:\\My_Repository\\Proje\\ShopApp\\ShopApp.API\\wwwroot\\products\\13.png",
+      "Identity": "D:\\My_Repository\\Proje\\ShopApp\\ShopApp.API\\wwwroot\\images\\products\\13.png",
       "SourceId": "ShopApp.API",
       "SourceType": "Discovered",
       "ContentRoot": "D:\\My_Repository\\Proje\\ShopApp\\ShopApp.API\\wwwroot\\",
       "BasePath": "_content/ShopApp.API",
-      "RelativePath": "products/13#[.{fingerprint}]?.png",
+      "RelativePath": "images/products/13#[.{fingerprint}]?.png",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Primary",
@@ -119,15 +119,15 @@
       "Integrity": "cLfp59ZOVkheZ/DK18BWgLAmETXisZY7mNbycXWrMO4=",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\products\\13.png"
+      "OriginalItemSpec": "wwwroot\\images\\products\\13.png"
     },
     {
-      "Identity": "D:\\My_Repository\\Proje\\ShopApp\\ShopApp.API\\wwwroot\\products\\14.png",
+      "Identity": "D:\\My_Repository\\Proje\\ShopApp\\ShopApp.API\\wwwroot\\images\\products\\14.png",
       "SourceId": "ShopApp.API",
       "SourceType": "Discovered",
       "ContentRoot": "D:\\My_Repository\\Proje\\ShopApp\\ShopApp.API\\wwwroot\\",
       "BasePath": "_content/ShopApp.API",
-      "RelativePath": "products/14#[.{fingerprint}]?.png",
+      "RelativePath": "images/products/14#[.{fingerprint}]?.png",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Primary",
@@ -140,15 +140,15 @@
       "Integrity": "IperVv1frTX0+QIF5hTv9jicCN3vwcaRjnaRyvixFHg=",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\products\\14.png"
+      "OriginalItemSpec": "wwwroot\\images\\products\\14.png"
     },
     {
-      "Identity": "D:\\My_Repository\\Proje\\ShopApp\\ShopApp.API\\wwwroot\\products\\15.png",
+      "Identity": "D:\\My_Repository\\Proje\\ShopApp\\ShopApp.API\\wwwroot\\images\\products\\15.png",
       "SourceId": "ShopApp.API",
       "SourceType": "Discovered",
       "ContentRoot": "D:\\My_Repository\\Proje\\ShopApp\\ShopApp.API\\wwwroot\\",
       "BasePath": "_content/ShopApp.API",
-      "RelativePath": "products/15#[.{fingerprint}]?.png",
+      "RelativePath": "images/products/15#[.{fingerprint}]?.png",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Primary",
@@ -161,15 +161,15 @@
       "Integrity": "DJz74ssB8b5ohjyOVy++pzLag9J2coxzZ1i738sAaVo=",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\products\\15.png"
+      "OriginalItemSpec": "wwwroot\\images\\products\\15.png"
     },
     {
-      "Identity": "D:\\My_Repository\\Proje\\ShopApp\\ShopApp.API\\wwwroot\\products\\16.png",
+      "Identity": "D:\\My_Repository\\Proje\\ShopApp\\ShopApp.API\\wwwroot\\images\\products\\16.png",
       "SourceId": "ShopApp.API",
       "SourceType": "Discovered",
       "ContentRoot": "D:\\My_Repository\\Proje\\ShopApp\\ShopApp.API\\wwwroot\\",
       "BasePath": "_content/ShopApp.API",
-      "RelativePath": "products/16#[.{fingerprint}]?.png",
+      "RelativePath": "images/products/16#[.{fingerprint}]?.png",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Primary",
@@ -182,15 +182,15 @@
       "Integrity": "x+jilKiQv/ZHkT6ep/N86fYNpsfqb37XLZtDJdsY9u0=",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\products\\16.png"
+      "OriginalItemSpec": "wwwroot\\images\\products\\16.png"
     },
     {
-      "Identity": "D:\\My_Repository\\Proje\\ShopApp\\ShopApp.API\\wwwroot\\products\\17.png",
+      "Identity": "D:\\My_Repository\\Proje\\ShopApp\\ShopApp.API\\wwwroot\\images\\products\\17.png",
       "SourceId": "ShopApp.API",
       "SourceType": "Discovered",
       "ContentRoot": "D:\\My_Repository\\Proje\\ShopApp\\ShopApp.API\\wwwroot\\",
       "BasePath": "_content/ShopApp.API",
-      "RelativePath": "products/17#[.{fingerprint}]?.png",
+      "RelativePath": "images/products/17#[.{fingerprint}]?.png",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Primary",
@@ -203,15 +203,15 @@
       "Integrity": "nSbZ1G9Sf/F0T3M8sn8hg6BGM+gMRGxSMD0phiIJNW4=",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\products\\17.png"
+      "OriginalItemSpec": "wwwroot\\images\\products\\17.png"
     },
     {
-      "Identity": "D:\\My_Repository\\Proje\\ShopApp\\ShopApp.API\\wwwroot\\products\\18.png",
+      "Identity": "D:\\My_Repository\\Proje\\ShopApp\\ShopApp.API\\wwwroot\\images\\products\\18.png",
       "SourceId": "ShopApp.API",
       "SourceType": "Discovered",
       "ContentRoot": "D:\\My_Repository\\Proje\\ShopApp\\ShopApp.API\\wwwroot\\",
       "BasePath": "_content/ShopApp.API",
-      "RelativePath": "products/18#[.{fingerprint}]?.png",
+      "RelativePath": "images/products/18#[.{fingerprint}]?.png",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Primary",
@@ -224,15 +224,15 @@
       "Integrity": "3KGdyBgWIaAYWVSwdjpq4++UU/O/7SKuX7eQ11mjwrw=",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\products\\18.png"
+      "OriginalItemSpec": "wwwroot\\images\\products\\18.png"
     },
     {
-      "Identity": "D:\\My_Repository\\Proje\\ShopApp\\ShopApp.API\\wwwroot\\products\\19.png",
+      "Identity": "D:\\My_Repository\\Proje\\ShopApp\\ShopApp.API\\wwwroot\\images\\products\\19.png",
       "SourceId": "ShopApp.API",
       "SourceType": "Discovered",
       "ContentRoot": "D:\\My_Repository\\Proje\\ShopApp\\ShopApp.API\\wwwroot\\",
       "BasePath": "_content/ShopApp.API",
-      "RelativePath": "products/19#[.{fingerprint}]?.png",
+      "RelativePath": "images/products/19#[.{fingerprint}]?.png",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Primary",
@@ -245,15 +245,15 @@
       "Integrity": "3xPcajsYGla+PjfCFKpzBjzzzOa/dzfOk7MwnmSl1Ys=",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\products\\19.png"
+      "OriginalItemSpec": "wwwroot\\images\\products\\19.png"
     },
     {
-      "Identity": "D:\\My_Repository\\Proje\\ShopApp\\ShopApp.API\\wwwroot\\products\\2.png",
+      "Identity": "D:\\My_Repository\\Proje\\ShopApp\\ShopApp.API\\wwwroot\\images\\products\\2.png",
       "SourceId": "ShopApp.API",
       "SourceType": "Discovered",
       "ContentRoot": "D:\\My_Repository\\Proje\\ShopApp\\ShopApp.API\\wwwroot\\",
       "BasePath": "_content/ShopApp.API",
-      "RelativePath": "products/2#[.{fingerprint}]?.png",
+      "RelativePath": "images/products/2#[.{fingerprint}]?.png",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Primary",
@@ -266,15 +266,15 @@
       "Integrity": "WZ3xJDjkAk5BD86iB+jogowy8TImuL6Jcr7kHnwU3rU=",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\products\\2.png"
+      "OriginalItemSpec": "wwwroot\\images\\products\\2.png"
     },
     {
-      "Identity": "D:\\My_Repository\\Proje\\ShopApp\\ShopApp.API\\wwwroot\\products\\20.png",
+      "Identity": "D:\\My_Repository\\Proje\\ShopApp\\ShopApp.API\\wwwroot\\images\\products\\20.png",
       "SourceId": "ShopApp.API",
       "SourceType": "Discovered",
       "ContentRoot": "D:\\My_Repository\\Proje\\ShopApp\\ShopApp.API\\wwwroot\\",
       "BasePath": "_content/ShopApp.API",
-      "RelativePath": "products/20#[.{fingerprint}]?.png",
+      "RelativePath": "images/products/20#[.{fingerprint}]?.png",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Primary",
@@ -287,15 +287,15 @@
       "Integrity": "Xsu136t4tEQ4K7QA3E74Z5tEvwtfKv0iNTDvMzP8OJg=",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\products\\20.png"
+      "OriginalItemSpec": "wwwroot\\images\\products\\20.png"
     },
     {
-      "Identity": "D:\\My_Repository\\Proje\\ShopApp\\ShopApp.API\\wwwroot\\products\\21.png",
+      "Identity": "D:\\My_Repository\\Proje\\ShopApp\\ShopApp.API\\wwwroot\\images\\products\\21.png",
       "SourceId": "ShopApp.API",
       "SourceType": "Discovered",
       "ContentRoot": "D:\\My_Repository\\Proje\\ShopApp\\ShopApp.API\\wwwroot\\",
       "BasePath": "_content/ShopApp.API",
-      "RelativePath": "products/21#[.{fingerprint}]?.png",
+      "RelativePath": "images/products/21#[.{fingerprint}]?.png",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Primary",
@@ -308,15 +308,15 @@
       "Integrity": "5pzwuUYXD6AH1SzyvpCLU5T+I+ZJE1I6iWoF4bzI0gM=",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\products\\21.png"
+      "OriginalItemSpec": "wwwroot\\images\\products\\21.png"
     },
     {
-      "Identity": "D:\\My_Repository\\Proje\\ShopApp\\ShopApp.API\\wwwroot\\products\\22.png",
+      "Identity": "D:\\My_Repository\\Proje\\ShopApp\\ShopApp.API\\wwwroot\\images\\products\\22.png",
       "SourceId": "ShopApp.API",
       "SourceType": "Discovered",
       "ContentRoot": "D:\\My_Repository\\Proje\\ShopApp\\ShopApp.API\\wwwroot\\",
       "BasePath": "_content/ShopApp.API",
-      "RelativePath": "products/22#[.{fingerprint}]?.png",
+      "RelativePath": "images/products/22#[.{fingerprint}]?.png",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Primary",
@@ -329,15 +329,15 @@
       "Integrity": "CMq1WyVxGFSw8fsDcdZaxo3/rlWUOye1O4bF460/wbk=",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\products\\22.png"
+      "OriginalItemSpec": "wwwroot\\images\\products\\22.png"
     },
     {
-      "Identity": "D:\\My_Repository\\Proje\\ShopApp\\ShopApp.API\\wwwroot\\products\\3.png",
+      "Identity": "D:\\My_Repository\\Proje\\ShopApp\\ShopApp.API\\wwwroot\\images\\products\\3.png",
       "SourceId": "ShopApp.API",
       "SourceType": "Discovered",
       "ContentRoot": "D:\\My_Repository\\Proje\\ShopApp\\ShopApp.API\\wwwroot\\",
       "BasePath": "_content/ShopApp.API",
-      "RelativePath": "products/3#[.{fingerprint}]?.png",
+      "RelativePath": "images/products/3#[.{fingerprint}]?.png",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Primary",
@@ -350,15 +350,15 @@
       "Integrity": "aTC0adwykCb0NDLkyiLePYqja/OuLCSeJzfTKFDmnRg=",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\products\\3.png"
+      "OriginalItemSpec": "wwwroot\\images\\products\\3.png"
     },
     {
-      "Identity": "D:\\My_Repository\\Proje\\ShopApp\\ShopApp.API\\wwwroot\\products\\4.png",
+      "Identity": "D:\\My_Repository\\Proje\\ShopApp\\ShopApp.API\\wwwroot\\images\\products\\4.png",
       "SourceId": "ShopApp.API",
       "SourceType": "Discovered",
       "ContentRoot": "D:\\My_Repository\\Proje\\ShopApp\\ShopApp.API\\wwwroot\\",
       "BasePath": "_content/ShopApp.API",
-      "RelativePath": "products/4#[.{fingerprint}]?.png",
+      "RelativePath": "images/products/4#[.{fingerprint}]?.png",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Primary",
@@ -371,15 +371,15 @@
       "Integrity": "nIp2+mwI8YmtvTOJlyh2YkYG5MBEjJ5QE44dPBbfGxg=",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\products\\4.png"
+      "OriginalItemSpec": "wwwroot\\images\\products\\4.png"
     },
     {
-      "Identity": "D:\\My_Repository\\Proje\\ShopApp\\ShopApp.API\\wwwroot\\products\\5.png",
+      "Identity": "D:\\My_Repository\\Proje\\ShopApp\\ShopApp.API\\wwwroot\\images\\products\\5.png",
       "SourceId": "ShopApp.API",
       "SourceType": "Discovered",
       "ContentRoot": "D:\\My_Repository\\Proje\\ShopApp\\ShopApp.API\\wwwroot\\",
       "BasePath": "_content/ShopApp.API",
-      "RelativePath": "products/5#[.{fingerprint}]?.png",
+      "RelativePath": "images/products/5#[.{fingerprint}]?.png",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Primary",
@@ -392,15 +392,15 @@
       "Integrity": "K3/jk9/f97ohbXIcymykqJbcxL998VM/f1MVeBMFsVc=",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\products\\5.png"
+      "OriginalItemSpec": "wwwroot\\images\\products\\5.png"
     },
     {
-      "Identity": "D:\\My_Repository\\Proje\\ShopApp\\ShopApp.API\\wwwroot\\products\\6.png",
+      "Identity": "D:\\My_Repository\\Proje\\ShopApp\\ShopApp.API\\wwwroot\\images\\products\\6.png",
       "SourceId": "ShopApp.API",
       "SourceType": "Discovered",
       "ContentRoot": "D:\\My_Repository\\Proje\\ShopApp\\ShopApp.API\\wwwroot\\",
       "BasePath": "_content/ShopApp.API",
-      "RelativePath": "products/6#[.{fingerprint}]?.png",
+      "RelativePath": "images/products/6#[.{fingerprint}]?.png",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Primary",
@@ -413,15 +413,15 @@
       "Integrity": "Z+6Htgcg7bUbxZBdQYD+CqX5jKub23aDO1jRKSUDGqw=",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\products\\6.png"
+      "OriginalItemSpec": "wwwroot\\images\\products\\6.png"
     },
     {
-      "Identity": "D:\\My_Repository\\Proje\\ShopApp\\ShopApp.API\\wwwroot\\products\\7.png",
+      "Identity": "D:\\My_Repository\\Proje\\ShopApp\\ShopApp.API\\wwwroot\\images\\products\\7.png",
       "SourceId": "ShopApp.API",
       "SourceType": "Discovered",
       "ContentRoot": "D:\\My_Repository\\Proje\\ShopApp\\ShopApp.API\\wwwroot\\",
       "BasePath": "_content/ShopApp.API",
-      "RelativePath": "products/7#[.{fingerprint}]?.png",
+      "RelativePath": "images/products/7#[.{fingerprint}]?.png",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Primary",
@@ -434,15 +434,15 @@
       "Integrity": "kYZEI/l6Ei+5OlOBTg0T3Kq6VOkqFgOe1JjlD/X0imc=",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\products\\7.png"
+      "OriginalItemSpec": "wwwroot\\images\\products\\7.png"
     },
     {
-      "Identity": "D:\\My_Repository\\Proje\\ShopApp\\ShopApp.API\\wwwroot\\products\\8.png",
+      "Identity": "D:\\My_Repository\\Proje\\ShopApp\\ShopApp.API\\wwwroot\\images\\products\\8.png",
       "SourceId": "ShopApp.API",
       "SourceType": "Discovered",
       "ContentRoot": "D:\\My_Repository\\Proje\\ShopApp\\ShopApp.API\\wwwroot\\",
       "BasePath": "_content/ShopApp.API",
-      "RelativePath": "products/8#[.{fingerprint}]?.png",
+      "RelativePath": "images/products/8#[.{fingerprint}]?.png",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Primary",
@@ -455,15 +455,15 @@
       "Integrity": "+1MY61VZ7HlyJ0U43WO1VFrkEkj/871XdXuMbX78i74=",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\products\\8.png"
+      "OriginalItemSpec": "wwwroot\\images\\products\\8.png"
     },
     {
-      "Identity": "D:\\My_Repository\\Proje\\ShopApp\\ShopApp.API\\wwwroot\\products\\9.png",
+      "Identity": "D:\\My_Repository\\Proje\\ShopApp\\ShopApp.API\\wwwroot\\images\\products\\9.png",
       "SourceId": "ShopApp.API",
       "SourceType": "Discovered",
       "ContentRoot": "D:\\My_Repository\\Proje\\ShopApp\\ShopApp.API\\wwwroot\\",
       "BasePath": "_content/ShopApp.API",
-      "RelativePath": "products/9#[.{fingerprint}]?.png",
+      "RelativePath": "images/products/9#[.{fingerprint}]?.png",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Primary",
@@ -476,15 +476,36 @@
       "Integrity": "UhUXlpDDDURCm8bgLr0BTO0lfFssN522yJHGsYGdj8o=",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\products\\9.png"
+      "OriginalItemSpec": "wwwroot\\images\\products\\9.png"
     },
     {
-      "Identity": "D:\\My_Repository\\Proje\\ShopApp\\ShopApp.API\\wwwroot\\products\\NoPicture.png",
+      "Identity": "D:\\My_Repository\\Proje\\ShopApp\\ShopApp.API\\wwwroot\\images\\products\\foto.jpg",
       "SourceId": "ShopApp.API",
       "SourceType": "Discovered",
       "ContentRoot": "D:\\My_Repository\\Proje\\ShopApp\\ShopApp.API\\wwwroot\\",
       "BasePath": "_content/ShopApp.API",
-      "RelativePath": "products/NoPicture#[.{fingerprint}]?.png",
+      "RelativePath": "images/products/foto#[.{fingerprint}]?.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "fzk8awkf3z",
+      "Integrity": "O+b8YCkM0osvArAj7EhPMow7uiCuiNVVcq/2U3sgeDI=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\images\\products\\foto.jpg"
+    },
+    {
+      "Identity": "D:\\My_Repository\\Proje\\ShopApp\\ShopApp.API\\wwwroot\\images\\products\\NoPicture.png",
+      "SourceId": "ShopApp.API",
+      "SourceType": "Discovered",
+      "ContentRoot": "D:\\My_Repository\\Proje\\ShopApp\\ShopApp.API\\wwwroot\\",
+      "BasePath": "_content/ShopApp.API",
+      "RelativePath": "images/products/NoPicture#[.{fingerprint}]?.png",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Primary",
@@ -497,13 +518,13 @@
       "Integrity": "0ihsxatF5Z9zhfeBU8Ml5u6/zEH9ZSZAhAd6iitlnjU=",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\products\\NoPicture.png"
+      "OriginalItemSpec": "wwwroot\\images\\products\\NoPicture.png"
     }
   ],
   "Endpoints": [
     {
-      "Route": "products/1.1jrb4w05bm.png",
-      "AssetFile": "D:\\My_Repository\\Proje\\ShopApp\\ShopApp.API\\wwwroot\\products\\1.png",
+      "Route": "images/products/1.1jrb4w05bm.png",
+      "AssetFile": "D:\\My_Repository\\Proje\\ShopApp\\ShopApp.API\\wwwroot\\images\\products\\1.png",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -538,7 +559,7 @@
         },
         {
           "Name": "label",
-          "Value": "products/1.png"
+          "Value": "images/products/1.png"
         },
         {
           "Name": "integrity",
@@ -547,8 +568,8 @@
       ]
     },
     {
-      "Route": "products/1.png",
-      "AssetFile": "D:\\My_Repository\\Proje\\ShopApp\\ShopApp.API\\wwwroot\\products\\1.png",
+      "Route": "images/products/1.png",
+      "AssetFile": "D:\\My_Repository\\Proje\\ShopApp\\ShopApp.API\\wwwroot\\images\\products\\1.png",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -584,8 +605,8 @@
       ]
     },
     {
-      "Route": "products/10.cc7ttcix1m.png",
-      "AssetFile": "D:\\My_Repository\\Proje\\ShopApp\\ShopApp.API\\wwwroot\\products\\10.png",
+      "Route": "images/products/10.cc7ttcix1m.png",
+      "AssetFile": "D:\\My_Repository\\Proje\\ShopApp\\ShopApp.API\\wwwroot\\images\\products\\10.png",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -620,7 +641,7 @@
         },
         {
           "Name": "label",
-          "Value": "products/10.png"
+          "Value": "images/products/10.png"
         },
         {
           "Name": "integrity",
@@ -629,8 +650,8 @@
       ]
     },
     {
-      "Route": "products/10.png",
-      "AssetFile": "D:\\My_Repository\\Proje\\ShopApp\\ShopApp.API\\wwwroot\\products\\10.png",
+      "Route": "images/products/10.png",
+      "AssetFile": "D:\\My_Repository\\Proje\\ShopApp\\ShopApp.API\\wwwroot\\images\\products\\10.png",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -666,8 +687,8 @@
       ]
     },
     {
-      "Route": "products/11.png",
-      "AssetFile": "D:\\My_Repository\\Proje\\ShopApp\\ShopApp.API\\wwwroot\\products\\11.png",
+      "Route": "images/products/11.png",
+      "AssetFile": "D:\\My_Repository\\Proje\\ShopApp\\ShopApp.API\\wwwroot\\images\\products\\11.png",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -703,8 +724,8 @@
       ]
     },
     {
-      "Route": "products/11.za2a06px91.png",
-      "AssetFile": "D:\\My_Repository\\Proje\\ShopApp\\ShopApp.API\\wwwroot\\products\\11.png",
+      "Route": "images/products/11.za2a06px91.png",
+      "AssetFile": "D:\\My_Repository\\Proje\\ShopApp\\ShopApp.API\\wwwroot\\images\\products\\11.png",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -739,7 +760,7 @@
         },
         {
           "Name": "label",
-          "Value": "products/11.png"
+          "Value": "images/products/11.png"
         },
         {
           "Name": "integrity",
@@ -748,8 +769,8 @@
       ]
     },
     {
-      "Route": "products/12.png",
-      "AssetFile": "D:\\My_Repository\\Proje\\ShopApp\\ShopApp.API\\wwwroot\\products\\12.png",
+      "Route": "images/products/12.png",
+      "AssetFile": "D:\\My_Repository\\Proje\\ShopApp\\ShopApp.API\\wwwroot\\images\\products\\12.png",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -785,8 +806,8 @@
       ]
     },
     {
-      "Route": "products/12.zrwbf65cy1.png",
-      "AssetFile": "D:\\My_Repository\\Proje\\ShopApp\\ShopApp.API\\wwwroot\\products\\12.png",
+      "Route": "images/products/12.zrwbf65cy1.png",
+      "AssetFile": "D:\\My_Repository\\Proje\\ShopApp\\ShopApp.API\\wwwroot\\images\\products\\12.png",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -821,7 +842,7 @@
         },
         {
           "Name": "label",
-          "Value": "products/12.png"
+          "Value": "images/products/12.png"
         },
         {
           "Name": "integrity",
@@ -830,8 +851,8 @@
       ]
     },
     {
-      "Route": "products/13.png",
-      "AssetFile": "D:\\My_Repository\\Proje\\ShopApp\\ShopApp.API\\wwwroot\\products\\13.png",
+      "Route": "images/products/13.png",
+      "AssetFile": "D:\\My_Repository\\Proje\\ShopApp\\ShopApp.API\\wwwroot\\images\\products\\13.png",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -867,8 +888,8 @@
       ]
     },
     {
-      "Route": "products/13.s91ca7anga.png",
-      "AssetFile": "D:\\My_Repository\\Proje\\ShopApp\\ShopApp.API\\wwwroot\\products\\13.png",
+      "Route": "images/products/13.s91ca7anga.png",
+      "AssetFile": "D:\\My_Repository\\Proje\\ShopApp\\ShopApp.API\\wwwroot\\images\\products\\13.png",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -903,7 +924,7 @@
         },
         {
           "Name": "label",
-          "Value": "products/13.png"
+          "Value": "images/products/13.png"
         },
         {
           "Name": "integrity",
@@ -912,8 +933,8 @@
       ]
     },
     {
-      "Route": "products/14.png",
-      "AssetFile": "D:\\My_Repository\\Proje\\ShopApp\\ShopApp.API\\wwwroot\\products\\14.png",
+      "Route": "images/products/14.png",
+      "AssetFile": "D:\\My_Repository\\Proje\\ShopApp\\ShopApp.API\\wwwroot\\images\\products\\14.png",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -949,8 +970,8 @@
       ]
     },
     {
-      "Route": "products/14.ybjcgfptwr.png",
-      "AssetFile": "D:\\My_Repository\\Proje\\ShopApp\\ShopApp.API\\wwwroot\\products\\14.png",
+      "Route": "images/products/14.ybjcgfptwr.png",
+      "AssetFile": "D:\\My_Repository\\Proje\\ShopApp\\ShopApp.API\\wwwroot\\images\\products\\14.png",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -985,7 +1006,7 @@
         },
         {
           "Name": "label",
-          "Value": "products/14.png"
+          "Value": "images/products/14.png"
         },
         {
           "Name": "integrity",
@@ -994,8 +1015,8 @@
       ]
     },
     {
-      "Route": "products/15.png",
-      "AssetFile": "D:\\My_Repository\\Proje\\ShopApp\\ShopApp.API\\wwwroot\\products\\15.png",
+      "Route": "images/products/15.png",
+      "AssetFile": "D:\\My_Repository\\Proje\\ShopApp\\ShopApp.API\\wwwroot\\images\\products\\15.png",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -1031,8 +1052,8 @@
       ]
     },
     {
-      "Route": "products/15.s42lmqqmfp.png",
-      "AssetFile": "D:\\My_Repository\\Proje\\ShopApp\\ShopApp.API\\wwwroot\\products\\15.png",
+      "Route": "images/products/15.s42lmqqmfp.png",
+      "AssetFile": "D:\\My_Repository\\Proje\\ShopApp\\ShopApp.API\\wwwroot\\images\\products\\15.png",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -1067,7 +1088,7 @@
         },
         {
           "Name": "label",
-          "Value": "products/15.png"
+          "Value": "images/products/15.png"
         },
         {
           "Name": "integrity",
@@ -1076,8 +1097,8 @@
       ]
     },
     {
-      "Route": "products/16.png",
-      "AssetFile": "D:\\My_Repository\\Proje\\ShopApp\\ShopApp.API\\wwwroot\\products\\16.png",
+      "Route": "images/products/16.png",
+      "AssetFile": "D:\\My_Repository\\Proje\\ShopApp\\ShopApp.API\\wwwroot\\images\\products\\16.png",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -1113,8 +1134,8 @@
       ]
     },
     {
-      "Route": "products/16.zx4vyv4lwp.png",
-      "AssetFile": "D:\\My_Repository\\Proje\\ShopApp\\ShopApp.API\\wwwroot\\products\\16.png",
+      "Route": "images/products/16.zx4vyv4lwp.png",
+      "AssetFile": "D:\\My_Repository\\Proje\\ShopApp\\ShopApp.API\\wwwroot\\images\\products\\16.png",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -1149,7 +1170,7 @@
         },
         {
           "Name": "label",
-          "Value": "products/16.png"
+          "Value": "images/products/16.png"
         },
         {
           "Name": "integrity",
@@ -1158,8 +1179,8 @@
       ]
     },
     {
-      "Route": "products/17.png",
-      "AssetFile": "D:\\My_Repository\\Proje\\ShopApp\\ShopApp.API\\wwwroot\\products\\17.png",
+      "Route": "images/products/17.png",
+      "AssetFile": "D:\\My_Repository\\Proje\\ShopApp\\ShopApp.API\\wwwroot\\images\\products\\17.png",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -1195,8 +1216,8 @@
       ]
     },
     {
-      "Route": "products/17.t4jfwuwnlr.png",
-      "AssetFile": "D:\\My_Repository\\Proje\\ShopApp\\ShopApp.API\\wwwroot\\products\\17.png",
+      "Route": "images/products/17.t4jfwuwnlr.png",
+      "AssetFile": "D:\\My_Repository\\Proje\\ShopApp\\ShopApp.API\\wwwroot\\images\\products\\17.png",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -1231,7 +1252,7 @@
         },
         {
           "Name": "label",
-          "Value": "products/17.png"
+          "Value": "images/products/17.png"
         },
         {
           "Name": "integrity",
@@ -1240,8 +1261,8 @@
       ]
     },
     {
-      "Route": "products/18.png",
-      "AssetFile": "D:\\My_Repository\\Proje\\ShopApp\\ShopApp.API\\wwwroot\\products\\18.png",
+      "Route": "images/products/18.png",
+      "AssetFile": "D:\\My_Repository\\Proje\\ShopApp\\ShopApp.API\\wwwroot\\images\\products\\18.png",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -1277,8 +1298,8 @@
       ]
     },
     {
-      "Route": "products/18.wrjvo9tin9.png",
-      "AssetFile": "D:\\My_Repository\\Proje\\ShopApp\\ShopApp.API\\wwwroot\\products\\18.png",
+      "Route": "images/products/18.wrjvo9tin9.png",
+      "AssetFile": "D:\\My_Repository\\Proje\\ShopApp\\ShopApp.API\\wwwroot\\images\\products\\18.png",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -1313,7 +1334,7 @@
         },
         {
           "Name": "label",
-          "Value": "products/18.png"
+          "Value": "images/products/18.png"
         },
         {
           "Name": "integrity",
@@ -1322,8 +1343,8 @@
       ]
     },
     {
-      "Route": "products/19.png",
-      "AssetFile": "D:\\My_Repository\\Proje\\ShopApp\\ShopApp.API\\wwwroot\\products\\19.png",
+      "Route": "images/products/19.png",
+      "AssetFile": "D:\\My_Repository\\Proje\\ShopApp\\ShopApp.API\\wwwroot\\images\\products\\19.png",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -1359,8 +1380,8 @@
       ]
     },
     {
-      "Route": "products/19.tlpejwstvr.png",
-      "AssetFile": "D:\\My_Repository\\Proje\\ShopApp\\ShopApp.API\\wwwroot\\products\\19.png",
+      "Route": "images/products/19.tlpejwstvr.png",
+      "AssetFile": "D:\\My_Repository\\Proje\\ShopApp\\ShopApp.API\\wwwroot\\images\\products\\19.png",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -1395,7 +1416,7 @@
         },
         {
           "Name": "label",
-          "Value": "products/19.png"
+          "Value": "images/products/19.png"
         },
         {
           "Name": "integrity",
@@ -1404,8 +1425,8 @@
       ]
     },
     {
-      "Route": "products/2.png",
-      "AssetFile": "D:\\My_Repository\\Proje\\ShopApp\\ShopApp.API\\wwwroot\\products\\2.png",
+      "Route": "images/products/2.png",
+      "AssetFile": "D:\\My_Repository\\Proje\\ShopApp\\ShopApp.API\\wwwroot\\images\\products\\2.png",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -1441,8 +1462,8 @@
       ]
     },
     {
-      "Route": "products/2.pwgvqrtnht.png",
-      "AssetFile": "D:\\My_Repository\\Proje\\ShopApp\\ShopApp.API\\wwwroot\\products\\2.png",
+      "Route": "images/products/2.pwgvqrtnht.png",
+      "AssetFile": "D:\\My_Repository\\Proje\\ShopApp\\ShopApp.API\\wwwroot\\images\\products\\2.png",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -1477,7 +1498,7 @@
         },
         {
           "Name": "label",
-          "Value": "products/2.png"
+          "Value": "images/products/2.png"
         },
         {
           "Name": "integrity",
@@ -1486,8 +1507,8 @@
       ]
     },
     {
-      "Route": "products/20.png",
-      "AssetFile": "D:\\My_Repository\\Proje\\ShopApp\\ShopApp.API\\wwwroot\\products\\20.png",
+      "Route": "images/products/20.png",
+      "AssetFile": "D:\\My_Repository\\Proje\\ShopApp\\ShopApp.API\\wwwroot\\images\\products\\20.png",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -1523,8 +1544,8 @@
       ]
     },
     {
-      "Route": "products/20.uwc4ljxhbw.png",
-      "AssetFile": "D:\\My_Repository\\Proje\\ShopApp\\ShopApp.API\\wwwroot\\products\\20.png",
+      "Route": "images/products/20.uwc4ljxhbw.png",
+      "AssetFile": "D:\\My_Repository\\Proje\\ShopApp\\ShopApp.API\\wwwroot\\images\\products\\20.png",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -1559,7 +1580,7 @@
         },
         {
           "Name": "label",
-          "Value": "products/20.png"
+          "Value": "images/products/20.png"
         },
         {
           "Name": "integrity",
@@ -1568,8 +1589,8 @@
       ]
     },
     {
-      "Route": "products/21.png",
-      "AssetFile": "D:\\My_Repository\\Proje\\ShopApp\\ShopApp.API\\wwwroot\\products\\21.png",
+      "Route": "images/products/21.png",
+      "AssetFile": "D:\\My_Repository\\Proje\\ShopApp\\ShopApp.API\\wwwroot\\images\\products\\21.png",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -1605,8 +1626,8 @@
       ]
     },
     {
-      "Route": "products/21.uexvudfja9.png",
-      "AssetFile": "D:\\My_Repository\\Proje\\ShopApp\\ShopApp.API\\wwwroot\\products\\21.png",
+      "Route": "images/products/21.uexvudfja9.png",
+      "AssetFile": "D:\\My_Repository\\Proje\\ShopApp\\ShopApp.API\\wwwroot\\images\\products\\21.png",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -1641,7 +1662,7 @@
         },
         {
           "Name": "label",
-          "Value": "products/21.png"
+          "Value": "images/products/21.png"
         },
         {
           "Name": "integrity",
@@ -1650,8 +1671,8 @@
       ]
     },
     {
-      "Route": "products/22.crysb7fpvr.png",
-      "AssetFile": "D:\\My_Repository\\Proje\\ShopApp\\ShopApp.API\\wwwroot\\products\\22.png",
+      "Route": "images/products/22.crysb7fpvr.png",
+      "AssetFile": "D:\\My_Repository\\Proje\\ShopApp\\ShopApp.API\\wwwroot\\images\\products\\22.png",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -1686,7 +1707,7 @@
         },
         {
           "Name": "label",
-          "Value": "products/22.png"
+          "Value": "images/products/22.png"
         },
         {
           "Name": "integrity",
@@ -1695,8 +1716,8 @@
       ]
     },
     {
-      "Route": "products/22.png",
-      "AssetFile": "D:\\My_Repository\\Proje\\ShopApp\\ShopApp.API\\wwwroot\\products\\22.png",
+      "Route": "images/products/22.png",
+      "AssetFile": "D:\\My_Repository\\Proje\\ShopApp\\ShopApp.API\\wwwroot\\images\\products\\22.png",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -1732,8 +1753,8 @@
       ]
     },
     {
-      "Route": "products/3.j9kcqpk5en.png",
-      "AssetFile": "D:\\My_Repository\\Proje\\ShopApp\\ShopApp.API\\wwwroot\\products\\3.png",
+      "Route": "images/products/3.j9kcqpk5en.png",
+      "AssetFile": "D:\\My_Repository\\Proje\\ShopApp\\ShopApp.API\\wwwroot\\images\\products\\3.png",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -1768,7 +1789,7 @@
         },
         {
           "Name": "label",
-          "Value": "products/3.png"
+          "Value": "images/products/3.png"
         },
         {
           "Name": "integrity",
@@ -1777,8 +1798,8 @@
       ]
     },
     {
-      "Route": "products/3.png",
-      "AssetFile": "D:\\My_Repository\\Proje\\ShopApp\\ShopApp.API\\wwwroot\\products\\3.png",
+      "Route": "images/products/3.png",
+      "AssetFile": "D:\\My_Repository\\Proje\\ShopApp\\ShopApp.API\\wwwroot\\images\\products\\3.png",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -1814,8 +1835,8 @@
       ]
     },
     {
-      "Route": "products/4.48s61cterp.png",
-      "AssetFile": "D:\\My_Repository\\Proje\\ShopApp\\ShopApp.API\\wwwroot\\products\\4.png",
+      "Route": "images/products/4.48s61cterp.png",
+      "AssetFile": "D:\\My_Repository\\Proje\\ShopApp\\ShopApp.API\\wwwroot\\images\\products\\4.png",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -1850,7 +1871,7 @@
         },
         {
           "Name": "label",
-          "Value": "products/4.png"
+          "Value": "images/products/4.png"
         },
         {
           "Name": "integrity",
@@ -1859,8 +1880,8 @@
       ]
     },
     {
-      "Route": "products/4.png",
-      "AssetFile": "D:\\My_Repository\\Proje\\ShopApp\\ShopApp.API\\wwwroot\\products\\4.png",
+      "Route": "images/products/4.png",
+      "AssetFile": "D:\\My_Repository\\Proje\\ShopApp\\ShopApp.API\\wwwroot\\images\\products\\4.png",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -1896,8 +1917,8 @@
       ]
     },
     {
-      "Route": "products/5.png",
-      "AssetFile": "D:\\My_Repository\\Proje\\ShopApp\\ShopApp.API\\wwwroot\\products\\5.png",
+      "Route": "images/products/5.png",
+      "AssetFile": "D:\\My_Repository\\Proje\\ShopApp\\ShopApp.API\\wwwroot\\images\\products\\5.png",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -1933,8 +1954,8 @@
       ]
     },
     {
-      "Route": "products/5.vn1zsolleq.png",
-      "AssetFile": "D:\\My_Repository\\Proje\\ShopApp\\ShopApp.API\\wwwroot\\products\\5.png",
+      "Route": "images/products/5.vn1zsolleq.png",
+      "AssetFile": "D:\\My_Repository\\Proje\\ShopApp\\ShopApp.API\\wwwroot\\images\\products\\5.png",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -1969,7 +1990,7 @@
         },
         {
           "Name": "label",
-          "Value": "products/5.png"
+          "Value": "images/products/5.png"
         },
         {
           "Name": "integrity",
@@ -1978,8 +1999,8 @@
       ]
     },
     {
-      "Route": "products/6.bnioq8chw0.png",
-      "AssetFile": "D:\\My_Repository\\Proje\\ShopApp\\ShopApp.API\\wwwroot\\products\\6.png",
+      "Route": "images/products/6.bnioq8chw0.png",
+      "AssetFile": "D:\\My_Repository\\Proje\\ShopApp\\ShopApp.API\\wwwroot\\images\\products\\6.png",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -2014,7 +2035,7 @@
         },
         {
           "Name": "label",
-          "Value": "products/6.png"
+          "Value": "images/products/6.png"
         },
         {
           "Name": "integrity",
@@ -2023,8 +2044,8 @@
       ]
     },
     {
-      "Route": "products/6.png",
-      "AssetFile": "D:\\My_Repository\\Proje\\ShopApp\\ShopApp.API\\wwwroot\\products\\6.png",
+      "Route": "images/products/6.png",
+      "AssetFile": "D:\\My_Repository\\Proje\\ShopApp\\ShopApp.API\\wwwroot\\images\\products\\6.png",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -2060,8 +2081,8 @@
       ]
     },
     {
-      "Route": "products/7.3j0vt2atxx.png",
-      "AssetFile": "D:\\My_Repository\\Proje\\ShopApp\\ShopApp.API\\wwwroot\\products\\7.png",
+      "Route": "images/products/7.3j0vt2atxx.png",
+      "AssetFile": "D:\\My_Repository\\Proje\\ShopApp\\ShopApp.API\\wwwroot\\images\\products\\7.png",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -2096,7 +2117,7 @@
         },
         {
           "Name": "label",
-          "Value": "products/7.png"
+          "Value": "images/products/7.png"
         },
         {
           "Name": "integrity",
@@ -2105,8 +2126,8 @@
       ]
     },
     {
-      "Route": "products/7.png",
-      "AssetFile": "D:\\My_Repository\\Proje\\ShopApp\\ShopApp.API\\wwwroot\\products\\7.png",
+      "Route": "images/products/7.png",
+      "AssetFile": "D:\\My_Repository\\Proje\\ShopApp\\ShopApp.API\\wwwroot\\images\\products\\7.png",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -2142,8 +2163,8 @@
       ]
     },
     {
-      "Route": "products/8.bwvyq1khrc.png",
-      "AssetFile": "D:\\My_Repository\\Proje\\ShopApp\\ShopApp.API\\wwwroot\\products\\8.png",
+      "Route": "images/products/8.bwvyq1khrc.png",
+      "AssetFile": "D:\\My_Repository\\Proje\\ShopApp\\ShopApp.API\\wwwroot\\images\\products\\8.png",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -2178,7 +2199,7 @@
         },
         {
           "Name": "label",
-          "Value": "products/8.png"
+          "Value": "images/products/8.png"
         },
         {
           "Name": "integrity",
@@ -2187,8 +2208,8 @@
       ]
     },
     {
-      "Route": "products/8.png",
-      "AssetFile": "D:\\My_Repository\\Proje\\ShopApp\\ShopApp.API\\wwwroot\\products\\8.png",
+      "Route": "images/products/8.png",
+      "AssetFile": "D:\\My_Repository\\Proje\\ShopApp\\ShopApp.API\\wwwroot\\images\\products\\8.png",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -2224,8 +2245,8 @@
       ]
     },
     {
-      "Route": "products/9.6nt54rqmky.png",
-      "AssetFile": "D:\\My_Repository\\Proje\\ShopApp\\ShopApp.API\\wwwroot\\products\\9.png",
+      "Route": "images/products/9.6nt54rqmky.png",
+      "AssetFile": "D:\\My_Repository\\Proje\\ShopApp\\ShopApp.API\\wwwroot\\images\\products\\9.png",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -2260,7 +2281,7 @@
         },
         {
           "Name": "label",
-          "Value": "products/9.png"
+          "Value": "images/products/9.png"
         },
         {
           "Name": "integrity",
@@ -2269,8 +2290,8 @@
       ]
     },
     {
-      "Route": "products/9.png",
-      "AssetFile": "D:\\My_Repository\\Proje\\ShopApp\\ShopApp.API\\wwwroot\\products\\9.png",
+      "Route": "images/products/9.png",
+      "AssetFile": "D:\\My_Repository\\Proje\\ShopApp\\ShopApp.API\\wwwroot\\images\\products\\9.png",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -2306,8 +2327,90 @@
       ]
     },
     {
-      "Route": "products/NoPicture.2gltvqr9h4.png",
-      "AssetFile": "D:\\My_Repository\\Proje\\ShopApp\\ShopApp.API\\wwwroot\\products\\NoPicture.png",
+      "Route": "images/products/foto.fzk8awkf3z.jpg",
+      "AssetFile": "D:\\My_Repository\\Proje\\ShopApp\\ShopApp.API\\wwwroot\\images\\products\\foto.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "1074465"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"O+b8YCkM0osvArAj7EhPMow7uiCuiNVVcq/2U3sgeDI=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Thu, 03 Apr 2025 18:16:49 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "fzk8awkf3z"
+        },
+        {
+          "Name": "label",
+          "Value": "images/products/foto.jpg"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-O+b8YCkM0osvArAj7EhPMow7uiCuiNVVcq/2U3sgeDI="
+        }
+      ]
+    },
+    {
+      "Route": "images/products/foto.jpg",
+      "AssetFile": "D:\\My_Repository\\Proje\\ShopApp\\ShopApp.API\\wwwroot\\images\\products\\foto.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "1074465"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"O+b8YCkM0osvArAj7EhPMow7uiCuiNVVcq/2U3sgeDI=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Thu, 03 Apr 2025 18:16:49 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-O+b8YCkM0osvArAj7EhPMow7uiCuiNVVcq/2U3sgeDI="
+        }
+      ]
+    },
+    {
+      "Route": "images/products/NoPicture.2gltvqr9h4.png",
+      "AssetFile": "D:\\My_Repository\\Proje\\ShopApp\\ShopApp.API\\wwwroot\\images\\products\\NoPicture.png",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -2342,7 +2445,7 @@
         },
         {
           "Name": "label",
-          "Value": "products/NoPicture.png"
+          "Value": "images/products/NoPicture.png"
         },
         {
           "Name": "integrity",
@@ -2351,8 +2454,8 @@
       ]
     },
     {
-      "Route": "products/NoPicture.png",
-      "AssetFile": "D:\\My_Repository\\Proje\\ShopApp\\ShopApp.API\\wwwroot\\products\\NoPicture.png",
+      "Route": "images/products/NoPicture.png",
+      "AssetFile": "D:\\My_Repository\\Proje\\ShopApp\\ShopApp.API\\wwwroot\\images\\products\\NoPicture.png",
       "Selectors": [],
       "ResponseHeaders": [
         {

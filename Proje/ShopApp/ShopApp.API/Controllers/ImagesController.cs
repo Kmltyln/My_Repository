@@ -24,6 +24,11 @@ namespace ShopApp.API.Controllers
             return CreateActionResult(response);
         }
 
-       
+       [HttpDelete]
+       public IActionResult DeleteImage(ImageDeleteDto imageDeleteDto)
+       {
+        var response=_imageHelper.DeleteImage(imageDeleteDto);
+        return CreateActionResult(response);
+       }
     }
 }
