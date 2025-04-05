@@ -1,11 +1,33 @@
 {
   "version": 3,
   "targets": {
-    "net9.0": {}
+    "net9.0": {
+      "ShopApp.Shared/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v9.0",
+        "compile": {
+          "bin/placeholder/ShopApp.Shared.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/ShopApp.Shared.dll": {}
+        },
+        "frameworkReferences": [
+          "Microsoft.AspNetCore.App"
+        ]
+      }
+    }
   },
-  "libraries": {},
+  "libraries": {
+    "ShopApp.Shared/1.0.0": {
+      "type": "project",
+      "path": "../ShopApp.Shared/ShopApp.Shared.csproj",
+      "msbuildProject": "../ShopApp.Shared/ShopApp.Shared.csproj"
+    }
+  },
   "projectFileDependencyGroups": {
-    "net9.0": []
+    "net9.0": [
+      "ShopApp.Shared >= 1.0.0"
+    ]
   },
   "packageFolders": {
     "C:\\Users\\Possessed One.000\\.nuget\\packages\\": {},
@@ -38,7 +60,11 @@
       "frameworks": {
         "net9.0": {
           "targetAlias": "net9.0",
-          "projectReferences": {}
+          "projectReferences": {
+            "D:\\My_Repository\\Proje\\ShopApp\\ShopApp.Shared\\ShopApp.Shared.csproj": {
+              "projectPath": "D:\\My_Repository\\Proje\\ShopApp\\ShopApp.Shared\\ShopApp.Shared.csproj"
+            }
+          }
         }
       },
       "warningProperties": {

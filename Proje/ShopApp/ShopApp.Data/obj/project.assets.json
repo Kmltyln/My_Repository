@@ -1191,6 +1191,9 @@
       "ShopApp.Entity/1.0.0": {
         "type": "project",
         "framework": ".NETCoreApp,Version=v9.0",
+        "dependencies": {
+          "ShopApp.Shared": "1.0.0"
+        },
         "compile": {
           "bin/placeholder/ShopApp.Entity.dll": {}
         },
