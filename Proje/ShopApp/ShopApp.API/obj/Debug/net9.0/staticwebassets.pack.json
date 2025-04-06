@@ -93,10 +93,6 @@
       "PackagePath": "staticwebassets\\images\\products\\NoPicture.png"
     },
     {
-      "Id": "D:\\My_Repository\\Proje\\ShopApp\\ShopApp.API\\wwwroot\\images\\products\\foto.jpg",
-      "PackagePath": "staticwebassets\\images\\products\\foto.jpg"
-    },
-    {
       "Id": "obj\\Debug\\net9.0\\staticwebassets\\msbuild.ShopApp.API.Microsoft.AspNetCore.StaticWebAssetEndpoints.props",
       "PackagePath": "build\\Microsoft.AspNetCore.StaticWebAssetEndpoints.props"
     },

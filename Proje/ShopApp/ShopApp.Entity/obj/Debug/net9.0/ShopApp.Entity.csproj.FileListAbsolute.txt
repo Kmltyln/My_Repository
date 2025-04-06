@@ -10,3 +10,7 @@ D:\My_Repository\Proje\ShopApp\ShopApp.Entity\obj\Debug\net9.0\ShopApp.Entity.dl
 D:\My_Repository\Proje\ShopApp\ShopApp.Entity\obj\Debug\net9.0\refint\ShopApp.Entity.dll
 D:\My_Repository\Proje\ShopApp\ShopApp.Entity\obj\Debug\net9.0\ShopApp.Entity.pdb
 D:\My_Repository\Proje\ShopApp\ShopApp.Entity\obj\Debug\net9.0\ref\ShopApp.Entity.dll
+D:\My_Repository\Proje\ShopApp\ShopApp.Entity\bin\Debug\net9.0\ShopApp.Shared.dll
+D:\My_Repository\Proje\ShopApp\ShopApp.Entity\bin\Debug\net9.0\ShopApp.Shared.pdb
+D:\My_Repository\Proje\ShopApp\ShopApp.Entity\obj\Debug\net9.0\ShopApp.Entity.csproj.AssemblyReference.cache
+D:\My_Repository\Proje\ShopApp\ShopApp.Entity\obj\Debug\net9.0\ShopApp..5C295F2D.Up2Date

@@ -689,6 +689,9 @@
         }
       },
       "ShopApp.Entity/1.0.0": {
+        "dependencies": {
+          "ShopApp.Shared": "1.0.0"
+        },
         "runtime": {
           "ShopApp.Entity.dll": {
             "assemblyVersion": "1.0.0",

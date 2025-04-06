@@ -264,18 +264,6 @@
       <EndpointProperties><![CDATA[[{"Name":"integrity","Value":"sha256-UhUXlpDDDURCm8bgLr0BTO0lfFssN522yJHGsYGdj8o="}]]]></EndpointProperties>
       <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=3600, must-revalidate"},{"Name":"Content-Length","Value":"65778"},{"Name":"Content-Type","Value":"image/png"},{"Name":"ETag","Value":"\u0022UhUXlpDDDURCm8bgLr0BTO0lfFssN522yJHGsYGdj8o=\u0022"},{"Name":"Last-Modified","Value":"Sat, 04 Jan 2025 11:03:59 GMT"}]]]></ResponseHeaders>
     </StaticWebAssetEndpoint>
-    <StaticWebAssetEndpoint Include="_content/ShopApp.API/images/products/foto.fzk8awkf3z.jpg">
-      <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\images\products\foto.jpg'))</AssetFile>
-      <Selectors><![CDATA[[]]]></Selectors>
-      <EndpointProperties><![CDATA[[{"Name":"fingerprint","Value":"fzk8awkf3z"},{"Name":"integrity","Value":"sha256-O\u002Bb8YCkM0osvArAj7EhPMow7uiCuiNVVcq/2U3sgeDI="},{"Name":"label","Value":"_content/ShopApp.API/images/products/foto.jpg"}]]]></EndpointProperties>
-      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=31536000, immutable"},{"Name":"Content-Length","Value":"1074465"},{"Name":"Content-Type","Value":"image/jpeg"},{"Name":"ETag","Value":"\u0022O\u002Bb8YCkM0osvArAj7EhPMow7uiCuiNVVcq/2U3sgeDI=\u0022"},{"Name":"Last-Modified","Value":"Thu, 03 Apr 2025 18:16:49 GMT"}]]]></ResponseHeaders>
-    </StaticWebAssetEndpoint>
-    <StaticWebAssetEndpoint Include="_content/ShopApp.API/images/products/foto.jpg">
-      <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\images\products\foto.jpg'))</AssetFile>
-      <Selectors><![CDATA[[]]]></Selectors>
-      <EndpointProperties><![CDATA[[{"Name":"integrity","Value":"sha256-O\u002Bb8YCkM0osvArAj7EhPMow7uiCuiNVVcq/2U3sgeDI="}]]]></EndpointProperties>
-      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=3600, must-revalidate"},{"Name":"Content-Length","Value":"1074465"},{"Name":"Content-Type","Value":"image/jpeg"},{"Name":"ETag","Value":"\u0022O\u002Bb8YCkM0osvArAj7EhPMow7uiCuiNVVcq/2U3sgeDI=\u0022"},{"Name":"Last-Modified","Value":"Thu, 03 Apr 2025 18:16:49 GMT"}]]]></ResponseHeaders>
-    </StaticWebAssetEndpoint>
     <StaticWebAssetEndpoint Include="_content/ShopApp.API/images/products/NoPicture.2gltvqr9h4.png">
       <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\images\products\NoPicture.png'))</AssetFile>
       <Selectors><![CDATA[[]]]></Selectors>
