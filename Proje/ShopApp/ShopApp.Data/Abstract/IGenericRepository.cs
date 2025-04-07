@@ -10,7 +10,7 @@ namespace ShopApp.Data.Abstract
     Task UpdateAsync(TEntity entity);
     Task DeleteAsync(TEntity entity);
 
-    Task <TEntity>GetByIdASync(
+    Task <TEntity>GetASync(
             Expression<Func<TEntity,bool>>?options=null,
             Func<IQueryable<TEntity>,IIncludableQueryable<TEntity,object>>? predicate=null);
     Task <List<TEntity>>GetAllAsync(Expression<Func<TEntity,bool>>?options=null,

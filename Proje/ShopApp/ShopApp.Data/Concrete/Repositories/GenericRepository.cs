@@ -41,7 +41,7 @@ public class GenericRepository<TEntity> : IGenericRepository<TEntity> where TEnt
             return await query.ToListAsync();//_dbContext.Products.Include(x=>x.Category).Where(x=>x.IsHome==true).ToListAsync()
         }
 
-    public async Task<TEntity> GetByIdASync(Expression<Func<TEntity, bool>>? options=null, Func<IQueryable<TEntity>, IIncludableQueryable<TEntity, object>>? predicate=null )
+    public async Task<TEntity> GetASync(Expression<Func<TEntity, bool>>? options=null, Func<IQueryable<TEntity>, IIncludableQueryable<TEntity, object>>? predicate=null )
     {
          IQueryable<TEntity> query = _dbSet;
             if (predicate != null)

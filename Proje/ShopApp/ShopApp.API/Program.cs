@@ -18,10 +18,16 @@ builder.Services.AddDbContext<AppDbContext>(options=>options.UseSqlite(builder.C
 
 builder.Services.AddScoped<ICategoryRepository,CategoryRepository>();
 builder.Services.AddScoped<IProductRepository,ProductRepository>();
+builder.Services.AddScoped<ICartRepository,CartRepository>();
+builder.Services.AddScoped<ICartItemRepository,CartItemRepository>();
+builder.Services.AddScoped<IOrderRepository,OrderRepository>();
 #endregion
 #region Services
 builder.Services.AddScoped<ICategoryService, CategoryService>();
 builder.Services.AddScoped<IProductService, ProductService>();
+builder.Services.AddScoped<ICartService, CartService>();
+builder.Services.AddScoped<ICartItemService, CartItemService>();
+builder.Services.AddScoped<IOrderService, OrderService>();
 #endregion
 builder.Services.AddScoped<IImageHelper,ImageHelper>(); 
 builder.Services.AddAutoMapper(AppDomain.CurrentDomain.GetAssemblies());
