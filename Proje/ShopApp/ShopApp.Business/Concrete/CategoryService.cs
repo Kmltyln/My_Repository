@@ -38,7 +38,7 @@ namespace ShopApp.Business.Concrete
 
         public async Task<ResponseDto<NoContent>> DeleteAsync(int id)
         {
-           var category=await _categoryRepository.GetByIdASync(x=>x.Id==id);
+           var category=await _categoryRepository.GetASync(x=>x.Id==id);
            if(category==null)
            {
             return ResponseDto<NoContent>.Fail($"{id}id'li kategori bulunamadı",StatusCodes.Status404NotFound); 
@@ -84,7 +84,7 @@ namespace ShopApp.Business.Concrete
 
         public async Task<ResponseDto<CategoryDto>> GetByIdAsync(int id)
         {
-           var category=await _categoryRepository.GetByIdASync(x=>x.Id==id);
+           var category=await _categoryRepository.GetASync(x=>x.Id==id);
           
           if(category==null)
           {
@@ -106,7 +106,7 @@ namespace ShopApp.Business.Concrete
 
         public async Task<ResponseDto<CategoryDto>> UpdateAsync(CategoryUpdateDto categoryUpdateDto)
         {
-            var category=await _categoryRepository.GetByIdASync(x=>x.Id==categoryUpdateDto.Id); 
+            var category=await _categoryRepository.GetASync(x=>x.Id==categoryUpdateDto.Id); 
             if(category==null)
             {
               return ResponseDto<CategoryDto>.Fail("Böyle bir kategori bulunamadı",StatusCodes.Status404NotFound);

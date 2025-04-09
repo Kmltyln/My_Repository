@@ -9,7 +9,7 @@ namespace ShopApp.Business.Abstract
     public interface ICartService
     {
 Task<ResponseDto<NoContent>> InitilaizeCartAsync(string userId);
-Task<ResponseDto<Cart>>GetCartByUserIdAsync(string userId);
-Task<ResponseDto<Cart>>AddToCartAsync(string userId,int productId,int quantity);
+Task<ResponseDto<Cart>> GetCartByUserIdAsync(string userId);
+Task<ResponseDto<NoContent>>AddToCartAsync(string userId,int productId,int quantity);
     }
 }
