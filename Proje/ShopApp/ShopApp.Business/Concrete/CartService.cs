@@ -25,27 +25,38 @@ namespace ShopApp.Business.Concrete
                 return ResponseDto<NoContent>.Fail("Kullanıcıya ait bir sepet bulunamadı!",StatusCodes.Status404NotFound);
             }
             var index=cart.CartItems.FindIndex(x=>x.ProductId==productId);
-            for(int i=0;i<cart.CartItems.Count;i++)
+           if(index<0)
             {
-                if(cart.CartItems[i].ProductId==productId)
+                cart.CartItems.Add(new CartItem
 
                 {
-                    index=i;
-                    break;
-                }
+                    ProductId=productId,
+                    Quantity=quantity,
+                    CartId=cart.Id,
+                });
             }
-            await _cartRepository.UpdateAsync(cart);
-            return ResponseDto<NoContent>.Success(StatusCodes.Status200OK);
+            else 
+            {
+                cart.CartItems[index].Quantity=quantity;
+            }
+           await _cartRepository.UpdateAsync(cart); 
+           return ResponseDto<NoContent>.Success(StatusCodes.Status200OK);  
         }
 
-        public Task<ResponseDto<Cart>> GetCartByUserIdAsync(string userId)
+        public async Task<ResponseDto<Cart>> GetCartByUserIdAsync(string userId)
         {
-            throw new NotImplementedException();
+            var cart=await _cartRepository.GetASync(x=>x.UserId==userId);
+             if(cart == null)
+            {
+                return ResponseDto<Cart>.Fail("Kullanıcıya ait bir sepet bulunamadı!",StatusCodes.Status404NotFound);
+            }
+            return ResponseDto<Cart>.Success(cart,StatusCodes.Status200OK);
         }
 
-        public Task<ResponseDto<NoContent>> InitilaizeCartAsync(string userId)
+        public async Task<ResponseDto<NoContent>> InitilaizeCartAsync(string userId)
         {
-            throw new NotImplementedException();
+            await _cartRepository.CreateAsync(new Cart{UserId=userId});
+            return ResponseDto<NoContent>.Success(StatusCodes.Status201Created);
         }
 
     
