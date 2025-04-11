@@ -42,23 +42,35 @@ namespace ShopApp.Business.Concrete
             }
             cart.CartItems.Clear();
             await _cartRepository.UpdateAsync(cart);
-            return ResponseDto<NoContent>.Success(); 
+            return ResponseDto<NoContent>.Success(StatusCodes.Status200OK); 
 
         }
 
-        public Task<ResponseDto<int>> CountAsync(int cartId)
+        public async Task<ResponseDto<int>> CountAsync(int cartId)
         {
-            throw new NotImplementedException();
+           var count=await _cartItemRepository.GetCountAsync(x=>x.CartId==cartId);
+           return ResponseDto<int>.Success(count,StatusCodes.Status200OK);
         }
 
-        public Task<ResponseDto<NoContent>> DeleteCartItemAsync(int cartItemId)
+        public async Task<ResponseDto<NoContent>> DeleteCartItemAsync(int cartItemId)
         {
-            throw new NotImplementedException();
+            var cartItem=await _cartItemRepository.GetASync(x=>x.Id==cartItemId);
+            if(cartItem  ==null)
+            {
+                return ResponseDto<NoContent>.Fail("İlgili ürün sepette bulunamadı!",StatusCodes.Status404NotFound);
+            }
+            await _cartItemRepository.DeleteAsync(cartItem);
+            return ResponseDto<NoContent>.Success(StatusCodes.Status200OK);
         }
 
-        public Task<ResponseDto<CartItem>> GetCartItemAsync(int cartItemId)
+        public async Task<ResponseDto<CartItem>> GetCartItemAsync(int cartItemId)
         {
-            throw new NotImplementedException();
+            var cartItem=await _cartItemRepository.GetASync(x=>x.Id==cartItemId,source=>source.Include(x=>x.Product));
+            if(cartItem  ==null)
+            {
+                return ResponseDto<CartItem>.Fail("İlgili ürün sepette bulunamadı!",StatusCodes.Status404NotFound);
+            }
+            return ResponseDto<CartItem>.Success(cartItem,StatusCodes.Status200OK);
         }
     }
 }

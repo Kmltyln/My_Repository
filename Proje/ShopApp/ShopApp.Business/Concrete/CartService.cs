@@ -1,6 +1,7 @@
 using System;
 using System.Security.Cryptography.X509Certificates;
 using Microsoft.AspNetCore.Http;
+using Microsoft.EntityFrameworkCore;
 using ShopApp.Business.Abstract;
 using ShopApp.Data.Abstract;
 using ShopApp.Entity.Concrete;
@@ -19,7 +20,7 @@ namespace ShopApp.Business.Concrete
 
         public async Task<ResponseDto<NoContent>> AddToCartAsync(string userId, int productId, int quantity)
         {
-            Cart cart=await _cartRepository.GetASync(x=>x.UserId==userId);
+            Cart cart=await _cartRepository.GetASync(x=>x.UserId==userId,source=>source.Include(x=>x.CartItems));
             if(cart == null)
             {
                 return ResponseDto<NoContent>.Fail("Kullanıcıya ait bir sepet bulunamadı!",StatusCodes.Status404NotFound);
