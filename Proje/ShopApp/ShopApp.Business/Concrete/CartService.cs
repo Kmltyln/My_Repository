@@ -46,7 +46,7 @@ namespace ShopApp.Business.Concrete
 
         public async Task<ResponseDto<Cart>> GetCartByUserIdAsync(string userId)
         {
-            var cart=await _cartRepository.GetASync(x=>x.UserId==userId);
+            var cart=await _cartRepository.GetASync(x=>x.UserId==userId,source=>source.Include(x=>x.CartItems)) ;
              if(cart == null)
             {
                 return ResponseDto<Cart>.Fail("Kullanıcıya ait bir sepet bulunamadı!",StatusCodes.Status404NotFound);

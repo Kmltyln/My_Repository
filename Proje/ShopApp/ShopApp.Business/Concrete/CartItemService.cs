@@ -40,7 +40,10 @@ namespace ShopApp.Business.Concrete
             {
                 return ResponseDto<NoContent>.Fail("İlgili ürün sepette bulunamadı!",StatusCodes.Status404NotFound);
             }
-            cart.CartItems.Clear();
+            foreach(var x in cart.CartItems)
+            {
+                await _cartItemRepository.DeleteAsync(x);
+            }
             await _cartRepository.UpdateAsync(cart);
             return ResponseDto<NoContent>.Success(StatusCodes.Status200OK); 
 
