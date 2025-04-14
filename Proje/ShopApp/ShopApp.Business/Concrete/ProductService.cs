@@ -180,6 +180,7 @@ public class ProductService : IProductService
         }
         
         product.IsActive=!product.IsActive;
+        product.IsActive=!product.IsHome ? false:product.IsHome;
         await _productRepository.UpdateAsync(product);
         return ResponseDto<NoContent>.Success(StatusCodes.Status200OK);
     }
@@ -192,7 +193,7 @@ public class ProductService : IProductService
             return ResponseDto<NoContent>.Fail($"{id}id'li bir ürün bulunamadı",StatusCodes.Status404NotFound);
         }
         product.IsHome=!product.IsHome;
-        product.IsActive=true;
+        product.IsActive=product.IsHome ? true:product.IsActive;
         await _productRepository.UpdateAsync(product);
         return ResponseDto<NoContent>.Success(StatusCodes.Status200OK);
     }

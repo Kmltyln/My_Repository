@@ -1,12 +1,22 @@
 using System;
+using Microsoft.AspNetCore.Http;
 using ShopApp.Business.Abstract;
+using ShopApp.Data.Abstract;
 using ShopApp.Entity.Concrete;
 using ShopApp.Shared.Dtos.ResponseDtos;
 
 namespace ShopApp.Business.Concrete
 {
     public class OrderService : IOrderService
-    {
+    
+    { 
+        private readonly IOrderRepository _orderRepository;
+
+        public OrderService(IOrderRepository orderRepository)
+        {
+            _orderRepository = orderRepository;
+        }
+
         public Task<ResponseDto<NoContent>> CancelOrder(int id)
         {
             throw new NotImplementedException();
@@ -17,12 +27,21 @@ namespace ShopApp.Business.Concrete
             throw new NotImplementedException();
         }
 
-        public Task<ResponseDto<NoContent>> CreateAsync(Order order)
+        public async Task<ResponseDto<NoContent>> CreateAsync(Order order)
         {
-            throw new NotImplementedException();
+           if(order==null)
+           {
+            return ResponseDto<NoContent>.Fail("Bir hata oluştu",StatusCodes.Status400BadRequest);
+           }
+        
+        var orderResult=await _orderRepository.CreateAsync(order);
+        if(orderResult==null)
+        {
+            return ResponseDto<NoContent>.Fail("Bir hata oluştu",StatusCodes.Status500InternalServerError);
         }
-
-        public Task<ResponseDto<Order>> GetOrderAsync(int id)
+        return ResponseDto<NoContent>.Success(StatusCodes.Status201Created);
+        }
+         public Task<ResponseDto<Order>> GetOrderAsync(int id)
         {
             throw new NotImplementedException();
         }

@@ -92,5 +92,17 @@ namespace ShopApp.API.Controllers
             var response = await _productService.GetHomeCountAsync(isHome);
             return CreateActionResult(response);
         }
+        [HttpGet("{id}")]
+         public async Task<IActionResult> UpdateIsActive(int id)
+        {
+            var response = await _productService.UpdateIsActiveAsync(id);
+            return CreateActionResult(response);
+        }
+         [HttpGet("{id}")]
+         public async Task<IActionResult> UpdateIsHome(int id)
+        {
+            var response = await _productService.UpdateIsHomeAsync(id);
+            return CreateActionResult(response);
+        } 
     }
 }
