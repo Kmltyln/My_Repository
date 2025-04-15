@@ -2,6 +2,7 @@ using System;
 using AutoMapper;
 using ShopApp.Entity.Concrete;
 using ShopApp.Shared.Dtos.CategoryDtos;
+using ShopApp.Shared.Dtos.OrderDtos;
 using ShopApp.Shared.Dtos.ProductDtos;
 namespace ShopApp.Business.Mapping
 {
@@ -16,6 +17,13 @@ namespace ShopApp.Business.Mapping
              CreateMap<Product,ProductDto>().ReverseMap();
              CreateMap<Product,ProductDto>().ReverseMap();
              CreateMap<Product,ProductDto>().ReverseMap(); 
+
+             CreateMap<Order, OrderDto>().ReverseMap();
+             CreateMap<Order, OrderCreateDto>().ReverseMap();
+
+
+             CreateMap<OrderItem, OrderItemDto>().ReverseMap();
+             CreateMap<OrderItem, OrderItemCreateDto>().ReverseMap();
         }
     }
 }

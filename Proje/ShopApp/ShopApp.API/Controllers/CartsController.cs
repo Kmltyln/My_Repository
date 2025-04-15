@@ -8,12 +8,12 @@ namespace ShopApp.API.Controllers
 {
     [Route("api/[controller]/[action]")]
     [ApiController]
-    public class CartController :CustomControllerBase
+    public class CartsController :CustomControllerBase
     {
         private readonly ICartService _cartService;
         private readonly ICartItemService _cartItemService;
 
-        public CartController(ICartService cartService, ICartItemService cartItemService)
+        public CartsController(ICartService cartService, ICartItemService cartItemService)
         {
             _cartService = cartService;
             _cartItemService = cartItemService;

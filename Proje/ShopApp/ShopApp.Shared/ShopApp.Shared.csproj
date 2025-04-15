@@ -8,7 +8,4 @@
 <ItemGroup>
 <FrameworkReference Include="Microsoft.AspNetCore.App" /> 
 </ItemGroup>
-<ItemGroup>
-  <Folder Include="Dtos\OrderDtos\" />
-</ItemGroup>
 </Project>
