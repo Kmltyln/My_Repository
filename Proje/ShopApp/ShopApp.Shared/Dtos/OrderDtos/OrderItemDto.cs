@@ -7,7 +7,7 @@ public class OrderItemDto
 {
   public int Id{get;set;}
     public int OrderId{get;set;}
-    public OrderDto Order{get;set; }
+    public InOrderItemOrderDto Order { get; set; }
   
     public int ProductId{get;set;}
     public ProductDto Product{get;set;}

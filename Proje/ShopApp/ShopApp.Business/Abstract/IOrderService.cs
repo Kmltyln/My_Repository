@@ -13,6 +13,6 @@ namespace ShopApp.Business.Abstract
          Task<ResponseDto<List<OrderDto>>>GetOrdersAsync(int productId);
          Task<ResponseDto<OrderDto>>GetOrderAsync(int id);
          Task<ResponseDto<NoContent>>ChangeOrderStatusAsync(int id,OrderState orderState);
-         Task<ResponseDto<NoContent>>CancelOrder(int id);
+         Task<ResponseDto<NoContent>>CancelOrderAsync(int id);
     }
 }
