@@ -5,7 +5,8 @@ using ShopApp.Shared.Dtos.ProductDtos;
 using ShopApp.Shared.Helpers;
 
 namespace ShopApp.API.Controllers
-{[ApiController]
+{
+    [ApiController]
     [Route("api/[controller]/[action]")]
     public class ProductsController : CustomControllerBase
     {
@@ -44,14 +45,14 @@ namespace ShopApp.API.Controllers
             return CreateActionResult(response);
         }
 
-        [HttpGet("{isActive}")]
+        [HttpGet("{isActive?}")]
         public async Task<IActionResult> GetActives(bool isActive = true)
         {
             var response = await _productService.GetActivesAsync(isActive);
             return CreateActionResult(response);
         }
 
-        [HttpGet("{isHome}")]
+        [HttpGet("{isHome?}")]
         public async Task<IActionResult> GetHomes(bool isHome = true)
         {
             var response = await _productService.GetHomeAsync(isHome);
@@ -79,30 +80,32 @@ namespace ShopApp.API.Controllers
             return CreateActionResult(response);
         }
 
-        [HttpGet("{isActive}")]
+        [HttpGet("{isActive?}")]
         public async Task<IActionResult> GetActivesCount(bool isActive = true)
         {
             var response = await _productService.GetActivesCountAsync(isActive);
             return CreateActionResult(response);
         }
 
-        [HttpGet("{isHome}")]
+        [HttpGet("{isHome?}")]
         public async Task<IActionResult> GetHomesCount(bool isHome = true)
         {
             var response = await _productService.GetHomeCountAsync(isHome);
             return CreateActionResult(response);
         }
+
         [HttpGet("{id}")]
-         public async Task<IActionResult> UpdateIsActive(int id)
+        public async Task<IActionResult> UpdateIsActive(int id)
         {
             var response = await _productService.UpdateIsActiveAsync(id);
             return CreateActionResult(response);
         }
-         [HttpGet("{id}")]
-         public async Task<IActionResult> UpdateIsHome(int id)
+
+        [HttpGet("{id}")]
+        public async Task<IActionResult> UpdateIsHome(int id)
         {
             var response = await _productService.UpdateIsHomeAsync(id);
             return CreateActionResult(response);
-        } 
+        }
     }
 }
